@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:latest
 
 #
 # Pull Zulu OpenJDK binaries from official repository:
