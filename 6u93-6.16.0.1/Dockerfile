@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 
 #
 # Pull Zulu OpenJDK binaries from official repository:

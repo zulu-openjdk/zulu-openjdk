@@ -3,6 +3,8 @@ FROM ubuntu:latest
 #
 # UTF-8 by default
 #
+RUN apt-get -qq update
+RUN apt-get install locales
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
