@@ -1,5 +1,7 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
+RUN apt-get clean && apt-get update
+RUN apt-get install locales
 #
 # UTF-8 by default
 #
