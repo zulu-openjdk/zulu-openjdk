@@ -96,4 +96,4 @@ And you can run a Zulu OpenJDK 6 container with the following command:
   [48]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u102-8.17.0.7/Dockerfile
   [49]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u112-8.19.0.1/Dockerfile
   [50]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u121-8.20.0.5/Dockerfile
-  [51]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9ea/Dockerfile
+  [51]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9-ea/Dockerfile

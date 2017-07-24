@@ -100,4 +100,4 @@ And you can run a Zulu OpenJDK 6 container with the following command:
   [52]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/8u102-8.17.0.3/Dockerfile
   [53]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/8u112-8.19.0.1/Dockerfile
   [54]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/8u121-8.20.0.5/Dockerfile
-  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/9ea/Dockerfile
+  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/9-ea/Dockerfile
