@@ -1,7 +1,7 @@
 What is Zulu? ![Zulu Duke in a Box][1]
 ======================================
 
-Zulu is a widely available binary distribution of OpenJDK. Zulu distributions are fully tested and compatibility verified builds of the latest versions of the OpenJDK 8, 7, and 6 platforms. Zulu is available free of charge for Linux, Windows, and MacOS platforms, with commercial support available upon request.
+Zulu is a widely available binary distribution of OpenJDK. Zulu distributions are fully tested and compatibility verified builds of the latest versions of the OpenJDK 9 EA, 8, 7, and 6 platforms. Zulu is available free of charge for Linux, Windows, and MacOS platforms, with commercial support available upon request.
 
 Zulu is built, tested, supported and made available by Azul Systems.
 
@@ -14,11 +14,11 @@ The Zulu repository azul/zulu-openjdk provides multiple tagged images. The lates
 
 [`8u131`, `8`, `latest` (*8u131/Dockerfile*)][38]
 
-[`7u141`, `7`, `latest` (*7u141/Dockerfile*)][23]
+[`7u141`, `7` (*7u141/Dockerfile*)][23]
 
-[`6u93`, `6`, `latest` (*6u93/Dockerfile*)][10]
+[`6u93`, `6` (*6u93/Dockerfile*)][10]
 
-Earlier Zulu OpenJDK 8, 7, and 6 releases can be found at: 
+Earlier Zulu OpenJDK 8, 7, and 6 releases can be found at:
 
 [8u05][39], [8u11][40], [8u20][41], [8u25][42], [8u31][43], [8u40][44], [8u45][45], [8u51][46], [8u60][47], [8u65][48], [8u66][49], [8u72][50], [8u92][51], [8u102][52], [8u112][53], [8u121][54]
 
@@ -26,13 +26,21 @@ Earlier Zulu OpenJDK 8, 7, and 6 releases can be found at:
 
 [6u49][11], [6u53][12], [6u56][13], [6u59][14], [6u63][15], [6u69][16], [6u73][17], [6u77][18], [6u79][19], [6u83][20], [6u87][21], [6u89][22]
 
+Zulu 9 EA build
+===============
+
+[9ea][55]
 
 Usage
 =====
 
-This Zulu repository supports multiple versions of OpenJDK-based Java SE JDKs. Zulu versions 8, 7, and 6 are compliant with Java SE 8, Java SE 7, and Java SE 6, respectively.
+This Zulu repository supports multiple versions of OpenJDK-based Java SE JDKs. Zulu versions 9 EA, 8, 7, and 6 are compliant with Java SE 9 EA, Java SE 8, Java SE 7, and Java SE 6, respectively.
 
-For example, you can run a Zulu OpenJDK 8 container with the following command:
+For example, you can run a Zulu OpenJDK 9 EA container with the following command:
+
+    docker run -it --rm azul/zulu-openjdk:9ea java -version
+
+You can run a Zulu OpenJDK 8 container with the following command:
 
     docker run -it --rm azul/zulu-openjdk:8 java -version
 
@@ -92,3 +100,4 @@ And you can run a Zulu OpenJDK 6 container with the following command:
   [52]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/8u102-8.17.0.3/Dockerfile
   [53]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/8u112-8.19.0.1/Dockerfile
   [54]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/8u121-8.20.0.5/Dockerfile
+  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/9ea/Dockerfile
