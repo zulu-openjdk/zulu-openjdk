@@ -1,4 +1,7 @@
-FROM debian:latest
+FROM debian:9
+
+RUN apt-get -qq update
+RUN apt-get -y install gnupg
 
 #
 # Pull Zulu OpenJDK binaries from official repository:
@@ -6,4 +9,5 @@ FROM debian:latest
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0x219BD9C9
 RUN echo "deb http://repos.azulsystems.com/debian stable  main" >> /etc/apt/sources.list.d/zulu.list
 RUN apt-get -qq update
+
 RUN apt-get -y install zulu-9=9.0.0.13
