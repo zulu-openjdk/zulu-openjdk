@@ -14,9 +14,9 @@ The Zulu repository azul/zulu-openjdk provides multiple tagged images. The lates
 
 [`8u131`, `8`, `latest` (*8u131/Dockerfile*)][35]
 
-[`7u141`, `7`, (*7u141/Dockerfile*)][22]
+[`7u141`, `7` (*7u141/Dockerfile*)][22]
 
-[`6u93`, `6`, (*6u93/Dockerfile*)][10]
+[`6u93`, `6` (*6u93/Dockerfile*)][10]
 
 Earlier Zulu OpenJDK 8, 7, and 6 releases can be found at:
 
