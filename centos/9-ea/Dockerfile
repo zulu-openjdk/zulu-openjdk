@@ -6,4 +6,4 @@ FROM centos:7
 RUN rpm --import http://repos.azulsystems.com/RPM-GPG-KEY-azulsystems
 RUN curl -o /etc/yum.repos.d/zulu.repo http://repos.azulsystems.com/rhel/zulu.repo
 RUN yum -q -y update
-RUN yum -q -y install zulu-9-9.0.0.13-1
+RUN yum -q -y install zulu-9-9.0.0.14-1
