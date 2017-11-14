@@ -2,7 +2,7 @@ FROM frolvlad/alpine-glibc
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
-RUN ZULU_ARCH=zulu8.23.0.3-jdk8.0.144-linux_x64.tar.gz && \
+RUN ZULU_ARCH=zulu8.25.0.1-jdk8.0.152-linux_x64.tar.gz && \
 	INSTALL_DIR=/usr/lib/jvm && \
 	BIN_DIR=/usr/bin && \
 	MAN_DIR=/usr/share/man/man1 && \
