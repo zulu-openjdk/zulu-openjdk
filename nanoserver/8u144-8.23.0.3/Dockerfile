@@ -2,8 +2,8 @@ FROM microsoft/nanoserver:latest
 
 MAINTAINER Boshi Lian <farmer1992@gmail.com>
 
-ENV JDK_URL https://cdn.azul.com/zulu/bin/zulu8.27.0.7-jdk8.0.162-win_x64.zip
-ENV JDK_VERSION 1.8.0_162
+ENV JDK_URL http://cdn.azul.com/zulu/bin/zulu8.23.0.3-jdk8.0.144-win_x64.zip
+ENV JDK_VERSION 1.8.0_144
 
 RUN powershell -NoProfile -Command \
         Invoke-WebRequest %JDK_URL% -OutFile jdk.zip; \
