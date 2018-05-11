@@ -12,19 +12,19 @@ Tags and `Dockerfile` links
 
 The Zulu repository azul/zulu-openjdk provides multiple tagged images. The latest Zulu OpenJDK 8, 7, and 6 versions are:
 
-[`8u162`, `8`, `latest` (*8u162/Dockerfile*)][18]
+[`8u172`, `8`, `latest` (*8u172/Dockerfile*)][20]
 
-[`7u171`, `7` (*7u171/Dockerfile*)][14]
+[`7u181`, `7` (*7u181/Dockerfile*)][15]
 
-[`6u103`, `6` (*6u103/Dockerfile*)][10]
+[`6u107`, `6` (*6u107/Dockerfile*)][10]
 
 Earlier Zulu OpenJDK 8, 7, and 6 releases can be found at:
 
-[8u131][19], [8u144][20], [8u152][21]
+[8u131][21], [8u144][22], [8u152][23], [8u162][24]
 
-[7u141][15], [7u154][16], [7u161][17]
+[7u141][16], [7u154][17], [7u161][18], [7u171][19]
 
-[6u93][11], [6u97][12], [6u99][13]
+[6u93][11], [6u97][12], [6u99][13], [6u103][14]
 
 Usage
 =====
@@ -46,17 +46,18 @@ And you can run a Zulu OpenJDK 6 container with the following command:
 
   [1]: https://www.azul.com/files/ZuluDocker60.gif
   [2]: http://www.azul.com/zulu
-  [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/6u103-6.19.0.1/Dockerfile
+  [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/6u107-6.20.0.1/Dockerfile
   [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/6u93-6.16.0.1/Dockerfile
   [12]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/6u97-6.17.0.1/Dockerfile
   [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/6u99-6.18.0.3/Dockerfile
-  [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u171-7.22.0.3/Dockerfile
-  [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u141-7.18.0.3/Dockerfile
-  [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u154-7.20.0.3/Dockerfile
-  [17]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u161-7.21.0.3/Dockerfile
-  [18]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u162-8.27.0.7/Dockerfile
-  [19]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u131-8.21.0.1/Dockerfile
-  [20]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u144-8.23.0.3/Dockerfile
-  [21]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u152-8.25.0.1/Dockerfile
-  [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/9u04-9.0.4.1/Dockerfile
-  [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/9u01-9.0.1.3/Dockerfile
+  [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/6u103-6.19.0.1/Dockerfile
+  [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u181-7.23.0.1/Dockerfile
+  [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u141-7.18.0.3/Dockerfile
+  [17]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u154-7.20.0.3/Dockerfile
+  [18]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u161-7.21.0.3/Dockerfile
+  [19]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/7u171-7.22.0.3/Dockerfile
+  [20]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u172-8.30.0.1/Dockerfile
+  [21]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u131-8.21.0.1/Dockerfile
+  [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u144-8.23.0.3/Dockerfile
+  [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u152-8.25.0.1/Dockerfile
+  [24]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u162-8.27.0.7/Dockerfile
