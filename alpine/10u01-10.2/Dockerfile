@@ -35,6 +35,14 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
 		"$ALPINE_GLIBC_BIN_PACKAGE_FILENAME" \
 		"$ALPINE_GLIBC_I18N_PACKAGE_FILENAME"
 
+RUN cd /tmp && \
+	wget -O gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download/ && \
+	wget -O zlib.tar.xz https://www.archlinux.org/packages/core/x86_64/zlib/download/ && \
+	tar Jxf gcc-libs.tar.xz usr/lib && \
+	tar Jxf zlib.tar.xz usr/lib && \
+	mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
+	rm -rf /tmp/usr
+
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
