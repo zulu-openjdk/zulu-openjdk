@@ -13,15 +13,13 @@ RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
 	wget https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub && \
 	wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${ALPINE_GLIBC_PACKAGE_VERSION}/glibc-${ALPINE_GLIBC_PACKAGE_VERSION}.apk -O glibc.apk && \
 	apk add --no-cache glibc.apk && \
-	rm glibc.apk && \
-	rm /etc/apk/keys/sgerrand.rsa.pub && \
-	cd /tmp && \
+	rm glibc.apk /etc/apk/keys/sgerrand.rsa.pub && \
 	wget -O gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download/ && \
 	wget -O zlib.tar.xz https://www.archlinux.org/packages/core/x86_64/zlib/download/ && \
-	tar Jxf gcc-libs.tar.xz usr/lib && \
-	tar Jxf zlib.tar.xz usr/lib && \
+	tar -xJf gcc-libs.tar.xz -C /tmp usr/lib && \
+	tar -xJf zlib.tar.xz -C /tmp usr/lib && \
 	mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
-	rm -rf /tmp/gcc-libs.tar.xz /tmp/zlib.tar.xz /tmp/usr && \
+	rm -rf gcc-libs.tar.xz zlib.tar.xz /tmp/usr && \
 	wget -q https://cdn.azul.com/zulu/bin/${ZULU_ARCH} && \
 	apk del .build-dependencies && \
 	rm /root/.wget-hsts && \
