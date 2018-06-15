@@ -3,31 +3,28 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
+	ALPINE_GLIBC_PACKAGE_VERSION=2.27-r0 && \
 	INSTALL_DIR=/usr/lib/jvm && \
 	BIN_DIR=/usr/bin && \
 	MAN_DIR=/usr/share/man/man1 && \
 	ZULU_DIR=$( basename ${ZULU_ARCH} .tar.gz ) && \
-	ALPINE_GLIBC_PACKAGE_VERSION=2.27-r0 && \
-	ALPINE_GLIBC_BASE_PACKAGE_FILENAME=glibc-${ALPINE_GLIBC_PACKAGE_VERSION}.apk && \
-	apk add --no-cache --virtual=.build-dependencies wget ca-certificates && \
+	apk add --no-cache --virtual=.build-dependencies ca-certificates wget && \
+	update-ca-certificates && \
 	wget https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub && \
-	wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${ALPINE_GLIBC_PACKAGE_VERSION}/${ALPINE_GLIBC_BASE_PACKAGE_FILENAME} && \
-	apk add --no-cache ${ALPINE_GLIBC_BASE_PACKAGE_FILENAME} && \
+	wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${ALPINE_GLIBC_PACKAGE_VERSION}/glibc-${ALPINE_GLIBC_PACKAGE_VERSION}.apk -O glibc.apk && \
+	apk add --no-cache glibc.apk && \
+	rm glibc.apk && \
 	rm /etc/apk/keys/sgerrand.rsa.pub && \
-	rm /root/.wget-hsts && \
-	apk del .build-dependencies && \
-	rm ${ALPINE_GLIBC_BASE_PACKAGE_FILENAME} && \
 	cd /tmp && \
 	wget -O gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download/ && \
 	wget -O zlib.tar.xz https://www.archlinux.org/packages/core/x86_64/zlib/download/ && \
 	tar Jxf gcc-libs.tar.xz usr/lib && \
 	tar Jxf zlib.tar.xz usr/lib && \
 	mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
-	rm -rf /tmp/usr && \
-	apk update && \
-	apk add --no-cache ca-certificates wget && \
-	update-ca-certificates && \
+	rm -rf /tmp/gcc-libs.tar.xz /tmp/zlib.tar.xz /tmp/usr && \
 	wget -q http://172.17.0.1:8000/${ZULU_ARCH} && \
+	apk del .build-dependencies && \
+	rm /root/.wget-hsts && \
 	mkdir -p ${INSTALL_DIR} && \
 	tar -xf ./${ZULU_ARCH} -C /usr/lib/jvm/ && rm -f ${ZULU_ARCH} && \
 	cd ${BIN_DIR}; find ${INSTALL_DIR}/${ZULU_DIR}/bin -type f -perm -a=x -exec ln -s {} . \; && \
