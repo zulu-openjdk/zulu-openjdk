@@ -7,17 +7,16 @@ RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
 	BIN_DIR=/usr/bin && \
 	MAN_DIR=/usr/share/man/man1 && \
 	ZULU_DIR=$( basename ${ZULU_ARCH} .tar.gz ) && \
-	ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download" && \
-	ALPINE_GLIBC_PACKAGE_VERSION="2.27-r0" && \
-	ALPINE_GLIBC_BASE_PACKAGE_FILENAME="glibc-$ALPINE_GLIBC_PACKAGE_VERSION.apk" && \
+	ALPINE_GLIBC_PACKAGE_VERSION=2.27-r0 && \
+	ALPINE_GLIBC_BASE_PACKAGE_FILENAME=glibc-${ALPINE_GLIBC_PACKAGE_VERSION}.apk && \
 	apk add --no-cache --virtual=.build-dependencies wget ca-certificates && \
-	wget "https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub" -O "/etc/apk/keys/sgerrand.rsa.pub" && \
-	wget "$ALPINE_GLIBC_BASE_URL/$ALPINE_GLIBC_PACKAGE_VERSION/$ALPINE_GLIBC_BASE_PACKAGE_FILENAME" && \
-	apk add --no-cache "$ALPINE_GLIBC_BASE_PACKAGE_FILENAME" && \
-	rm "/etc/apk/keys/sgerrand.rsa.pub" && \
-	rm "/root/.wget-hsts" && \
+	wget https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub && \
+	wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${ALPINE_GLIBC_PACKAGE_VERSION}/${ALPINE_GLIBC_BASE_PACKAGE_FILENAME} && \
+	apk add --no-cache ${ALPINE_GLIBC_BASE_PACKAGE_FILENAME} && \
+	rm /etc/apk/keys/sgerrand.rsa.pub && \
+	rm /root/.wget-hsts && \
 	apk del .build-dependencies && \
-	rm "$ALPINE_GLIBC_BASE_PACKAGE_FILENAME" && \
+	rm ${ALPINE_GLIBC_BASE_PACKAGE_FILENAME} && \
 	cd /tmp && \
 	wget -O gcc-libs.tar.xz https://www.archlinux.org/packages/core/x86_64/gcc-libs/download/ && \
 	wget -O zlib.tar.xz https://www.archlinux.org/packages/core/x86_64/zlib/download/ && \
