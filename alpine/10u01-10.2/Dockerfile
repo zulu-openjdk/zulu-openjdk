@@ -22,7 +22,7 @@ RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
 	tar Jxf zlib.tar.xz usr/lib && \
 	mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
 	rm -rf /tmp/gcc-libs.tar.xz /tmp/zlib.tar.xz /tmp/usr && \
-	wget -q http://172.17.0.1:8000/${ZULU_ARCH} && \
+	wget -q http://cdn.azul.com/zulu/bin/${ZULU_ARCH} && \
 	apk del .build-dependencies && \
 	rm /root/.wget-hsts && \
 	mkdir -p ${INSTALL_DIR} && \
