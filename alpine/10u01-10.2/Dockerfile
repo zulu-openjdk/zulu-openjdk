@@ -8,7 +8,7 @@ RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
 	BIN_DIR=/usr/bin && \
 	MAN_DIR=/usr/share/man/man1 && \
 	ZULU_DIR=$( basename ${ZULU_ARCH} .tar.gz ) && \
-	apk add --no-cache --virtual=.build-dependencies ca-certificates wget && \
+	apk add --no-cache --virtual=.build-dependencies ca-certificates wget binutils && \
 	update-ca-certificates && \
 	wget https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub && \
 	wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${ALPINE_GLIBC_PACKAGE_VERSION}/glibc-${ALPINE_GLIBC_PACKAGE_VERSION}.apk -O glibc.apk && \
@@ -19,6 +19,7 @@ RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
 	tar -xJf gcc-libs.tar.xz -C /tmp usr/lib && \
 	tar -xJf zlib.tar.xz -C /tmp usr/lib && \
 	mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
+	strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so.* && \
 	rm -rf gcc-libs.tar.xz zlib.tar.xz /tmp/usr && \
 	wget -q https://cdn.azul.com/zulu/bin/${ZULU_ARCH} && \
 	apk del .build-dependencies && \
