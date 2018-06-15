@@ -22,11 +22,11 @@ RUN ZULU_ARCH=zulu10.2+3-jdk10.0.1-linux_x64.tar.gz && \
 	tar Jxf zlib.tar.xz usr/lib && \
 	mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
 	rm -rf /tmp/gcc-libs.tar.xz /tmp/zlib.tar.xz /tmp/usr && \
-	wget -q http://cdn.azul.com/zulu/bin/${ZULU_ARCH} && \
+	wget -q https://cdn.azul.com/zulu/bin/${ZULU_ARCH} && \
 	apk del .build-dependencies && \
 	rm /root/.wget-hsts && \
 	mkdir -p ${INSTALL_DIR} && \
-	tar -xf ./${ZULU_ARCH} -C /usr/lib/jvm/ && rm -f ${ZULU_ARCH} && \
+	tar -xf ./${ZULU_ARCH} -C ${INSTALL_DIR} && rm -f ${ZULU_ARCH} && \
 	cd ${BIN_DIR}; find ${INSTALL_DIR}/${ZULU_DIR}/bin -type f -perm -a=x -exec ln -s {} . \; && \
 	mkdir -p ${MAN_DIR} && \
 	cd ${MAN_DIR}; find ${INSTALL_DIR}/${ZULU_DIR}/man/man1 -type f -name "*.1" -exec ln -s {} . \; && \
