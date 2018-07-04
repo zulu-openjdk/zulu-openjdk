@@ -6,7 +6,9 @@ ENV JDK_URL http://cdn.azul.com/zulu/bin/zulu8.25.0.1-jdk8.0.152-win_x64.zip
 ENV JDK_VERSION 1.8.0_152
 
 RUN powershell -NoProfile -Command \
-        Invoke-WebRequest %JDK_URL% -OutFile jdk.zip; \
+        Invoke-WebRequest %JDK_URL% -OutFile jdk.zip;
+
+RUN powershell -NoProfile -Command \
         Expand-Archive jdk.zip -DestinationPath '%ProgramFiles%'; \
         Move-Item '%ProgramFiles%\zulu*' '%ProgramFiles%\zulujdk'; \
         Remove-Item -Force jdk.zip
