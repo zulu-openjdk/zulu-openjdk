@@ -1,10 +1,10 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 #
 # UTF-8 by default
 #
 RUN apt-get -qq update && \
-    apt-get -qqy install locales && \
+    apt-get -qqy install gnupg2 locales && \
     locale-gen en_US.UTF-8 && \
     rm -rf /var/lib/apt/lists/*
 
