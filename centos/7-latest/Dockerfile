@@ -1,6 +1,13 @@
 FROM centos:7
 
 #
+# UTF-8 by default
+#
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+#
 # Pull Zulu OpenJDK binaries from official repository:
 #
 RUN rpm --import http://repos.azulsystems.com/RPM-GPG-KEY-azulsystems
