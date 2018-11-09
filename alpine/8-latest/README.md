@@ -12,7 +12,7 @@ Tags and `Dockerfile` links
 
 The Zulu repository azul/zulu-openjdk provides multiple tagged images. The latest Zulu OpenJDK 11, 8, 7, and 6 versions are:
 
-[`11.0.1`, `11` (*11.0.1/Dockerfile*)][33]
+[`11.0.1`, `11` (*11.0.1/Dockerfile*)][31]
 
 [`8u192`, `8`, `latest` (*8u192/Dockerfile*)][24]
 
@@ -20,13 +20,9 @@ The Zulu repository azul/zulu-openjdk provides multiple tagged images. The lates
 
 [`6u119`, `6` (*6u119/Dockerfile*)][10]
 
-Earlier Zulu OpenJDK 11, 10, 9, 8, 7, and 6 releases can be found at:
+Earlier Zulu OpenJDK 11, 8, 7, and 6 releases can be found at:
 
 
-
-[10u02][32]
-
-[9u07][31]
 
 [8u131][25], [8u144][26], [8u152][27], [8u162][28], [8u172][29], [8u181][30]
 
@@ -79,6 +75,4 @@ And you can run a Zulu OpenJDK 6 container with the following command:
   [28]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u162-8.27.0.7/Dockerfile
   [29]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u172-8.30.0.1/Dockerfile
   [30]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u181-8.31.0.1/Dockerfile
-  [31]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/9u07-9.0.7.1/Dockerfile
-  [32]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/10u02-10.3/Dockerfile
-  [33]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.1-11.2/Dockerfile
+  [31]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.1-11.2/Dockerfile
