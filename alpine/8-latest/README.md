@@ -7,6 +7,9 @@ Zulu is built, tested, supported and made available by Azul Systems.
 
 [www.azul.com/zulu][2]
 
+Zulu 8 starting with the release of OpenJDK 8u192 and Zulu 11 introduce support for musl for Alpine Linux.
+All future distributions of Zulu 8 and Zulu 11 for Alpine Linux will will be based on musl libc.
+
 Tags and `Dockerfile` links
 ===========================
 
