@@ -13,4 +13,4 @@ ENV LC_ALL en_US.UTF-8
 RUN rpm --import http://repos.azulsystems.com/RPM-GPG-KEY-azulsystems
 RUN curl -o /etc/yum.repos.d/zulu.repo http://repos.azulsystems.com/rhel/zulu.repo
 RUN yum -q -y update
-RUN yum -q -y install zulu-11-11.29+3-1
+RUN yum -q -y install zulu-11-11.29+11-1
