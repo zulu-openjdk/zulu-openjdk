@@ -1,64 +1,87 @@
 What is Zulu? ![Zulu Duke in a Box][1]
 ======================================
 
-Zulu is a widely available binary distribution of OpenJDK. Zulu distributions are fully tested and compatibility verified builds of the latest versions of the OpenJDK 12, 11, 8 and 7 platforms. Zulu is available free of charge for Linux, Windows, and MacOS platforms, with commercial support available upon request.
+Zulu is a binary distribution of the open-source OpenJDK project for Linux, Windows, and MacOS operating systems.
 
-Zulu is built, tested, supported and made available by Azul Systems.
+Zulu distributions are fully tested and verified for compatibility builds of the latest versions of OpenJDK 12, 11, 8, and 7.
 
-[www.azul.com/zulu][2]
+Zulu comes in two flavours: Zulu Community Edition, a completely free version, and Zulu Enterprise Edition that is backed by full commercial support.
+
+Zulu is built, tested, supported, and delivered by [Azul Systems][2].
+
+Check out [Zulu Overview][3] for more information.
+
+Alpine, Centos, Debian, and Ubuntu Docker images of Zulu are available in the following repositories:
+
+  * [azul/zulu-openjdk-alpine][4]
+  * [azul/zulu-openjdk-centos][5]
+  * [azul/zulu-openjdk-debian][6]
+  * [azul/zulu-openjdk][7]
 
 Tags and `Dockerfile` links
 ===========================
 
-The Zulu repository azul/zulu-openjdk provides multiple tagged images. The latest Zulu OpenJDK 12, 11, 8 and 7 versions are:
+Most Recent
+-----------
 
-[`12.0.1`, `12` (*12.0.1/Dockerfile*)][81]
+The Zulu azul/zulu-openjdk-centos repository provides various Centos Docker image tags. The most recent Zulu versions of OpenJDK 12, 11, 8, and 7 are listed below:
 
-[`11.0.3`, `11` (*11.0.3/Dockerfile*)][78]
+ * [`12.0.1`, `12` (*12.0.1/Dockerfile*)][81]
 
-[`8u212`, `8`, `latest` (*8u212/Dockerfile*)][49]
+ * [`11.0.3`, `11` (*11.0.3/Dockerfile*)][78]
 
-[`7u222`, `7` (*7u222/Dockerfile*)][28]
+ * [`8u212`, `8`, `latest` (*8u212/Dockerfile*)][49]
 
-Earlier Zulu OpenJDK 12, 11, 10, 9, 8, 7, and 6 releases can be found at:
+ * [`7u222`, `7` (*7u222/Dockerfile*)][28]
 
+Previous
+--------
 
+Earlier created Centos Docker image tags of Zulu for previous releases of OpenJDK 12, 11, 10, 9, 8, 7, and 6 are as follows:
 
-[11.0.1][79], [11.0.2][80]
+* [11.0.1][79], [11.0.2][80]
 
-[10u01][76], [10u02][77]
+* [10u01][76], [10u02][77]
 
-[9u01][73], [9u04][74], [9u07][75]
+* [9u01][73], [9u04][74], [9u07][75]
 
-[8u11][50], [8u20][51], [8u25][52], [8u31][53], [8u40][54], [8u45][55], [8u51][56], [8u60][57], [8u65][58], [8u66][59], [8u72][60], [8u92][61], [8u102][62], [8u112][63], [8u121][64], [8u131][65], [8u144][66], [8u152][67], [8u162][68], [8u172][69], [8u181][70], [8u192][71], [8u202][72]
+* [8u11][50], [8u20][51], [8u25][52], [8u31][53], [8u40][54], [8u45][55], [8u51][56], [8u60][57], [8u65][58], [8u66][59], [8u72][60], [8u92][61], [8u102][62], [8u112][63], [8u121][64], [8u131][65], [8u144][66], [8u152][67], [8u162][68], [8u172][69], [8u181][70], [8u192][71], [8u202][72]
 
-[7u65][29], [7u72][30], [7u76][31], [7u79][32], [7u80][33], [7u85][34], [7u91][35], [7u95][36], [7u101][37], [7u111][38], [7u121][39], [7u131][40], [7u141][41], [7u154][42], [7u161][43], [7u171][44], [7u181][45], [7u191][46], [7u201][47], [7u211][48]
+* [7u65][29], [7u72][30], [7u76][31], [7u79][32], [7u80][33], [7u85][34], [7u91][35], [7u95][36], [7u101][37], [7u111][38], [7u121][39], [7u131][40], [7u141][41], [7u154][42], [7u161][43], [7u171][44], [7u181][45], [7u191][46], [7u201][47], [7u211][48]
 
-[6u53][10], [6u56][11], [6u59][12], [6u63][13], [6u69][14], [6u73][15], [6u77][16], [6u79][17], [6u83][18], [6u87][19], [6u89][20], [6u93][21], [6u97][22], [6u99][23], [6u103][24], [6u107][25], [6u113][26], [6u119][27]
+* [6u53][10], [6u56][11], [6u59][12], [6u63][13], [6u69][14], [6u73][15], [6u77][16], [6u79][17], [6u83][18], [6u87][19], [6u89][20], [6u93][21], [6u97][22], [6u99][23], [6u103][24], [6u107][25], [6u113][26], [6u119][27]
 
 Usage
 =====
 
-This Zulu repository supports multiple versions of OpenJDK-based Java SE JDKs. Zulu versions 12, 11, 8 and 7 are compliant with Java SE 12, 11, Java SE 8 and Java SE 7 respectively.
+This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 12, 11, 8, and 7 of Zulu are compliant with Java SE 12, 11, 8, and 7 respectively.
 
-For example, you can run a Zulu OpenJDK 12 container with the following command:
+To run a container of your choice, use commands below as an example.
+
+For a Zulu OpenJDK 12 container, enter:
 
     docker run -it --rm azul/zulu-openjdk-centos:12 java -version
 
-For example, you can run a Zulu OpenJDK 11 container with the following command:
+For a Zulu OpenJDK 11 container, enter:
 
     docker run -it --rm azul/zulu-openjdk-centos:11 java -version
 
-You can run a Zulu OpenJDK 8 container with the following command:
+For a Zulu OpenJDK 8 container, enter:
 
     docker run -it --rm azul/zulu-openjdk-centos:8 java -version
 
-Similarly, you can run a Zulu OpenJDK 7 container with the following command:
+For a Zulu OpenJDK 7 container, enter:
 
     docker run -it --rm azul/zulu-openjdk-centos:7 java -version
 
   [1]: https://www.azul.com/files/ZuluDocker60.gif
   [2]: http://www.azul.com/zulu
+  [3]: https://www.azul.com/products/zulu-enterprise
+  [4]: https://hub.docker.com/r/azul/zulu-openjdk-alpine
+  [5]: https://hub.docker.com/r/azul/zulu-openjdk-centos
+  [6]: https://hub.docker.com/r/azul/zulu-openjdk-debian
+  [7]: https://hub.docker.com/r/azul/zulu-openjdk
+
   [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/6u53-6.5.0.2/Dockerfile
   [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/6u56-6.6.0.1/Dockerfile
   [12]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/6u59-6.7.0.2/Dockerfile
@@ -131,3 +154,4 @@ Similarly, you can run a Zulu OpenJDK 7 container with the following command:
   [79]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.1-11.2/Dockerfile
   [80]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.2-11.29/Dockerfile
   [81]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.1-12.2/Dockerfile
+
