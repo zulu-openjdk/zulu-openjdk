@@ -3,7 +3,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 ENV JAVA_HOME=/usr/lib/jvm/zulu-11
-RUN ZULU_ARCH=zulu11.33.15-ca-jdk11.0.4-linux_musl_x64.tar.gz && \
+RUN ZULU_ARCH=zulu11.33.15-ca-jre11.0.4-linux_musl_x64.tar.gz && \
     INSTALL_DIR=$( dirname $JAVA_HOME ) && \
     BIN_DIR=/usr/bin && \
     MAN_DIR=/usr/share/man/man1 && \
