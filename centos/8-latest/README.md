@@ -11,7 +11,7 @@ Zulu is built, tested, supported, and delivered by [Azul Systems][2].
 
 Check out [Zulu Overview][3] for more information.
 
-Alpine, Centos, Debian, and Ubuntu Docker images of Zulu are available in the following repositories:
+Alpine, Centos, Debian, and Ubuntu Docker official images of Zulu are available in the following repositories:
 
   * [azul/zulu-openjdk-alpine][4]
   * [azul/zulu-openjdk-centos][5]
