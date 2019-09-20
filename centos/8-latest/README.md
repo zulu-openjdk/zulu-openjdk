@@ -3,7 +3,7 @@ What is Zulu? ![Zulu Duke in a Box][1]
 
 Zulu is a binary distribution of the open-source OpenJDK project for Linux, Windows, and MacOS operating systems.
 
-Zulu distributions are fully tested and verified for compatibility builds of the latest versions of OpenJDK 12, 11, 8, and 7.
+Zulu distributions are fully tested and verified for compatibility builds of the latest versions of OpenJDK 13, 11, 8, and 7.
 
 Zulu comes in two flavours: Zulu Community Edition, a completely free version, and Zulu Enterprise Edition that is backed by full commercial support.
 
@@ -24,9 +24,9 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 
-The Zulu azul/zulu-openjdk-centos repository provides various Centos Docker image tags. The most recent Zulu versions of OpenJDK 12, 11, 8, and 7 are listed below:
+The Zulu azul/zulu-openjdk-centos repository provides various Centos Docker image tags. The most recent Zulu versions of OpenJDK 13, 11, 8, and 7 are listed below:
 
- * [`12.0.2`, `12` (*12.0.2/Dockerfile*)][84]
+ * [`13.0.2`, `13` (*13.0.2/Dockerfile*)][84]
 
  * [`11.0.4`, `11` (*11.0.4/Dockerfile*)][80]
 
@@ -39,7 +39,7 @@ Previous
 
 Earlier created Centos Docker image tags of Zulu for previous releases of OpenJDK 12, 11, 10, 9, 8, 7, and 6 are as follows:
 
-* [12.0.1][85]
+* [12.0.2][85]
 
 * [11.0.1][81], [11.0.2][82], [11.0.3][83]
 
@@ -56,13 +56,13 @@ Earlier created Centos Docker image tags of Zulu for previous releases of OpenJD
 Usage
 =====
 
-This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 12, 11, 8, and 7 of Zulu are compliant with Java SE 12, 11, 8, and 7 respectively.
+This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 13, 12, 11, 10, 9, 8, and 7 of Zulu are compliant with Java SE 13, 12, 11, 10, 9, 8, and 7 respectively.
 
 To run a container of your choice, use commands below as an example.
 
-For a Zulu OpenJDK 12 container, enter:
+For a Zulu OpenJDK 13 container, enter:
 
-    docker run -it --rm azul/zulu-openjdk-centos:12 java -version
+    docker run -it --rm azul/zulu-openjdk-centos:13 java -version
 
 For a Zulu OpenJDK 11 container, enter:
 
@@ -158,5 +158,5 @@ For a Zulu OpenJDK 7 container, enter:
   [81]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.1-11.2/Dockerfile
   [82]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.2-11.29/Dockerfile
   [83]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.3-11.31/Dockerfile
-  [84]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.2-12.3/Dockerfile
-  [85]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.1-12.2/Dockerfile
+  [84]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/13-latest/Dockerfile
+  [85]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.2-12.3/Dockerfile
