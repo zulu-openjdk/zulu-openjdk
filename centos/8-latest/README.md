@@ -26,7 +26,7 @@ Most Recent
 
 The Zulu azul/zulu-openjdk-centos repository provides various Centos Docker image tags. The most recent Zulu versions of OpenJDK 13, 11, 8, and 7 are listed below:
 
- * [`13.0.2`, `13` (*13.0.2/Dockerfile*)][84]
+ * [`13`, `13` (*13-latest/Dockerfile*)][84]
 
  * [`11.0.4`, `11` (*11.0.4/Dockerfile*)][80]
 
