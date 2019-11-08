@@ -6,6 +6,7 @@ FROM centos:7
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
+ENV JAVA_HOME=/usr/lib/jvm/zulu-11
 
 #
 # Pull Zulu OpenJDK binaries from official repository:
