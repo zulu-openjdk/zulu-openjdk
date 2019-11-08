@@ -10,3 +10,5 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361
 RUN echo "deb http://repos.azulsystems.com/debian stable  main" >> /etc/apt/sources.list.d/zulu.list
 RUN apt-get -qq update
 RUN apt-get -y install zulu-11
+
+ENV JAVA_HOME=/usr/lib/jvm/zulu-11-amd64/
