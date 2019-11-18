@@ -26,37 +26,37 @@ Most Recent
 
 The Zulu azul/zulu-openjdk-centos repository provides various Centos Docker image tags. The most recent Zulu versions of OpenJDK 13, 11, 8, and 7 are listed below:
 
- * [`13`, `13` (*13-latest/Dockerfile*)][84]
+ * [`13.0.1`, `13` (*13.0.1/Dockerfile*)][89]
 
- * [`11.0.4`, `11` (*11.0.4/Dockerfile*)][80]
+ * [`11.0.5`, `11` (*11.0.5/Dockerfile*)][82]
 
- * [`8u222`, `8`, `latest` (*8u222/Dockerfile*)][50]
+ * [`8u232`, `8`, `latest` (*8u232/Dockerfile*)][51]
 
- * [`7u232`, `7` (*7u232/Dockerfile*)][28]
+ * [`7u242`, `7` (*7u242/Dockerfile*)][28]
 
 Previous
 --------
 
 Earlier created Centos Docker image tags of Zulu for previous releases of OpenJDK 12, 11, 10, 9, 8, 7, and 6 are as follows:
 
-* [12.0.2][85]
+* [12.0.1][87], [12.0.2][88]
 
-* [11.0.1][81], [11.0.2][82], [11.0.3][83]
+* [11.0.1][83], [11.0.2][84], [11.0.3][85], [11.0.4][86]
 
-* [10u01][78], [10u02][79]
+* [10u01][80], [10u02][81]
 
-* [9u01][75], [9u04][76], [9u07][77]
+* [9u01][77], [9u04][78], [9u07][79]
 
-* [8u11][51], [8u20][52], [8u25][53], [8u31][54], [8u40][55], [8u45][56], [8u51][57], [8u60][58], [8u65][59], [8u66][60], [8u72][61], [8u92][62], [8u102][63], [8u112][64], [8u121][65], [8u131][66], [8u144][67], [8u152][68], [8u162][69], [8u172][70], [8u181][71], [8u192][72], [8u202][73], [8u212][74]
+* [8u11][52], [8u20][53], [8u25][54], [8u31][55], [8u40][56], [8u45][57], [8u51][58], [8u60][59], [8u65][60], [8u66][61], [8u72][62], [8u92][63], [8u102][64], [8u112][65], [8u121][66], [8u131][67], [8u144][68], [8u152][69], [8u162][70], [8u172][71], [8u181][72], [8u192][73], [8u202][74], [8u212][75], [8u222][76]
 
-* [7u65][29], [7u72][30], [7u76][31], [7u79][32], [7u80][33], [7u85][34], [7u91][35], [7u95][36], [7u101][37], [7u111][38], [7u121][39], [7u131][40], [7u141][41], [7u154][42], [7u161][43], [7u171][44], [7u181][45], [7u191][46], [7u201][47], [7u211][48], [7u222][49]
+* [7u65][29], [7u72][30], [7u76][31], [7u79][32], [7u80][33], [7u85][34], [7u91][35], [7u95][36], [7u101][37], [7u111][38], [7u121][39], [7u131][40], [7u141][41], [7u154][42], [7u161][43], [7u171][44], [7u181][45], [7u191][46], [7u201][47], [7u211][48], [7u222][49], [7u232][50]
 
 * [6u53][10], [6u56][11], [6u59][12], [6u63][13], [6u69][14], [6u73][15], [6u77][16], [6u79][17], [6u83][18], [6u87][19], [6u89][20], [6u93][21], [6u97][22], [6u99][23], [6u103][24], [6u107][25], [6u113][26], [6u119][27]
 
 Usage
 =====
 
-This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 13, 12, 11, 10, 9, 8, and 7 of Zulu are compliant with Java SE 13, 12, 11, 10, 9, 8, and 7 respectively.
+This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-13 of Zulu are compliant with Java SE 7-13 respectively.
 
 To run a container of your choice, use commands below as an example.
 
@@ -102,7 +102,7 @@ For a Zulu OpenJDK 7 container, enter:
   [25]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/6u107-6.20.0.1/Dockerfile
   [26]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/6u113-6.21.0.3/Dockerfile
   [27]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/6u119-6.22.0.3/Dockerfile
-  [28]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u232-7.31.0.5/Dockerfile
+  [28]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u242-7.34.0.5/Dockerfile
   [29]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u65-7.6.0.1/Dockerfile
   [30]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u72-7.7.0.1/Dockerfile
   [31]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u76-7.8.0.3/Dockerfile
@@ -124,39 +124,43 @@ For a Zulu OpenJDK 7 container, enter:
   [47]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u201-7.25.0.5/Dockerfile
   [48]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u211-7.27.0.1/Dockerfile
   [49]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u222-7.29.0.5/Dockerfile
-  [50]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u222-8.40.0.25/Dockerfile
-  [51]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u11-8.2.0.1/Dockerfile
-  [52]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u20-8.3.0.1/Dockerfile
-  [53]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u25-8.4.0.1/Dockerfile
-  [54]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u31-8.5.0.1/Dockerfile
-  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u40-8.6.0.1/Dockerfile
-  [56]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u45-8.7.0.5/Dockerfile
-  [57]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u51-8.8.0.3/Dockerfile
-  [58]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u60-8.9.0.4/Dockerfile
-  [59]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u65-8.10.0.1/Dockerfile
-  [60]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u66-8.11.0.1/Dockerfile
-  [61]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u72-8.13.0.5/Dockerfile
-  [62]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u92-8.15.0.1/Dockerfile
-  [63]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u102-8.17.0.7/Dockerfile
-  [64]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u112-8.19.0.1/Dockerfile
-  [65]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u121-8.20.0.5/Dockerfile
-  [66]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u131-8.21.0.1/Dockerfile
-  [67]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u144-8.23.0.3/Dockerfile
-  [68]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u152-8.25.0.1/Dockerfile
-  [69]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u162-8.27.0.7/Dockerfile
-  [70]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u172-8.30.0.1/Dockerfile
-  [71]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u181-8.31.0.1/Dockerfile
-  [72]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u192-8.33.0.1/Dockerfile
-  [73]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u202-8.36.0.1/Dockerfile
-  [74]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u212-8.38.0.13/Dockerfile
-  [75]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9u01-9.0.1.3/Dockerfile
-  [76]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9u04-9.0.4.1/Dockerfile
-  [77]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9u07-9.0.7.1/Dockerfile
-  [78]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/10u01-10.2/Dockerfile
-  [79]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/10u02-10.3/Dockerfile
-  [80]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.4-11.33/Dockerfile
-  [81]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.1-11.2/Dockerfile
-  [82]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.2-11.29/Dockerfile
-  [83]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.3-11.31/Dockerfile
-  [84]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/13-latest/Dockerfile
-  [85]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.2-12.3/Dockerfile
+  [50]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/7u232-7.31.0.5/Dockerfile
+  [51]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u232-8.42.0.23/Dockerfile
+  [52]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u11-8.2.0.1/Dockerfile
+  [53]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u20-8.3.0.1/Dockerfile
+  [54]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u25-8.4.0.1/Dockerfile
+  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u31-8.5.0.1/Dockerfile
+  [56]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u40-8.6.0.1/Dockerfile
+  [57]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u45-8.7.0.5/Dockerfile
+  [58]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u51-8.8.0.3/Dockerfile
+  [59]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u60-8.9.0.4/Dockerfile
+  [60]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u65-8.10.0.1/Dockerfile
+  [61]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u66-8.11.0.1/Dockerfile
+  [62]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u72-8.13.0.5/Dockerfile
+  [63]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u92-8.15.0.1/Dockerfile
+  [64]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u102-8.17.0.7/Dockerfile
+  [65]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u112-8.19.0.1/Dockerfile
+  [66]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u121-8.20.0.5/Dockerfile
+  [67]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u131-8.21.0.1/Dockerfile
+  [68]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u144-8.23.0.3/Dockerfile
+  [69]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u152-8.25.0.1/Dockerfile
+  [70]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u162-8.27.0.7/Dockerfile
+  [71]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u172-8.30.0.1/Dockerfile
+  [72]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u181-8.31.0.1/Dockerfile
+  [73]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u192-8.33.0.1/Dockerfile
+  [74]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u202-8.36.0.1/Dockerfile
+  [75]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u212-8.38.0.13/Dockerfile
+  [76]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/8u222-8.40.0.25/Dockerfile
+  [77]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9u01-9.0.1.3/Dockerfile
+  [78]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9u04-9.0.4.1/Dockerfile
+  [79]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/9u07-9.0.7.1/Dockerfile
+  [80]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/10u01-10.2/Dockerfile
+  [81]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/10u02-10.3/Dockerfile
+  [82]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.5-11.35/Dockerfile
+  [83]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.1-11.2/Dockerfile
+  [84]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.2-11.29/Dockerfile
+  [85]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.3-11.31/Dockerfile
+  [86]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.4-11.33/Dockerfile
+  [87]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.1-12.2/Dockerfile
+  [88]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/12.0.2-12.3/Dockerfile
+  [89]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/13.0.1-13.28/Dockerfile
