@@ -3,7 +3,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 ENV JAVA_HOME=/usr/lib/jvm/zulu-7
-RUN ZULU_ARCH=zulu7.34.0.5-ca-jdk7.0.242-linux_x64.tar.gz && \
+RUN ZULU_ARCH=zulu7.36.0.5-ca-jdk7.0.252-linux_x64.tar.gz && \
     INSTALL_DIR=$( dirname $JAVA_HOME ) && \
     BIN_DIR=/usr/bin && \
     MAN_DIR=/usr/share/man/man1 && \
