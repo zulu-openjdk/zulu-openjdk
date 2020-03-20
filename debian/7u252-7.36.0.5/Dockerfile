@@ -9,7 +9,7 @@ RUN apt-get -qq update && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xB1998361219BD9C9 && \
     echo "deb http://repos.azulsystems.com/debian stable  main" >> /etc/apt/sources.list.d/zulu.list && \
     apt-get -qq update && \
-    apt-get remove -y gnupg2
+    apt-get remove -y gnupg
    
 RUN apt-get -y install zulu-7=7.36.0.5 && \
     $JAVA_HOME/bin/java -version && \
