@@ -1,8 +1,9 @@
 FROM debian:9
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu-11-amd64/
+ENV JAVA_HOME=/usr/lib/jvm/zulu-14-amd64/
+
 #
-# Pull Zulu OpenJDK binaries from official repository
+# Pull Zulu OpenJDK binaries from official repository:
 #
 RUN apt-get -qq update && \
     apt-get -y install gnupg && \
@@ -10,8 +11,8 @@ RUN apt-get -qq update && \
     echo "deb http://repos.azulsystems.com/debian stable  main" >> /etc/apt/sources.list.d/zulu.list && \
     apt-get -qq update && \
     apt-get remove -y gnupg
-   
-RUN apt-get -y install zulu-11=11.37+17 && \
+
+RUN apt-get -y install zulu-14 && \
     $JAVA_HOME/bin/java -version && \
     apt-get autoremove -y && \
     apt-get clean 
