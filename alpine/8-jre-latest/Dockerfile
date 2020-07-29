@@ -1,1 +1,1 @@
-../8u252-8.46.0.19-jre/Dockerfile
+../8u262-8.48.0.51-jre/Dockerfile
