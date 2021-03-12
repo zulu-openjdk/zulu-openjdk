@@ -4,7 +4,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-ARG ZULU_DIR=zulu14.28.21-ca-jdk14.0.1-linux_musl_x64
+ARG ZULU_DIR=zulu7.44.0.11-ca-jdk7.0.292-linux_x64
 
 RUN ZULU_PACK=${ZULU_DIR}.tar.gz && \
     INSTALL_DIR=/usr/lib/jvm && \
@@ -23,7 +23,7 @@ RUN ZULU_PACK=${ZULU_DIR}.tar.gz && \
     mv /tmp/usr/lib/libgcc_s.so* /tmp/usr/lib/libstdc++.so* /tmp/usr/lib/libz.so* /usr/glibc-compat/lib/ && \
     strip /usr/glibc-compat/lib/libgcc_s.so.* /usr/glibc-compat/lib/libstdc++.so.* && \
     rm -rf gcc-libs.tar.xz zlib.tar.xz /tmp/usr && \
-    wget -q https://cdn.azul.com/zulu/bin/zulu14.28.21-ca-jdk14.0.1-linux_musl_x64.tar.gz && rm /root/.wget-hsts && \
+    wget -q https://cdn.azul.com/zulu/bin/zulu7.44.0.11-ca-jdk7.0.292-linux_x64.tar.gz && rm /root/.wget-hsts && \
     mkdir -p ${INSTALL_DIR} && \
     tar -xf ./${ZULU_PACK} -C ${INSTALL_DIR} && rm -f ${ZULU_PACK} && \
     cd ${BIN_DIR} && \
