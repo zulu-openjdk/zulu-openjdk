@@ -31,7 +31,7 @@ The Zulu azul/zulu-openjdk repository provides various Ubuntu Docker image tags.
 
  * [`15.0.2`, `15` (*15.0.2/Dockerfile*)][119]
 
- * [`14.0.2`, `14` (*14.0.1/Dockerfile*)][117]
+ * [`14.0.2`, `14` (*14.0.2/Dockerfile*)][117]
 
  * [`13.0.6`, `13` (*13.0.6/Dockerfile*)][115]
 
