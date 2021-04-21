@@ -16,8 +16,8 @@ RUN rpm --import http://repos.azulsystems.com/RPM-GPG-KEY-azulsystems && \
     rpm -ivh zulu-repo-${ZULU_REPO_VER}.noarch.rpm && \
     yum -q -y update && \
     yum -q -y upgrade && \
-    yum -q -y install zulu16-jdk && \
+    yum -q -y install zulu11-jdk && \
     yum clean all && \
     rm -rf /var/cache/yum zulu-repo_${ZULU_REPO_VER}.noarch.rpm
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu16
+ENV JAVA_HOME=/usr/lib/jvm/zulu11

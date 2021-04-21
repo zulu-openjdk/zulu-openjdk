@@ -12,9 +12,9 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
-    apt-get -qq -y --no-install-recommends install zulu16-jdk=16-* && \
+    apt-get -qq -y --no-install-recommends install zulu7-jdk=7.0.302-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu16-ca-amd64
+ENV JAVA_HOME=/usr/lib/jvm/zulu7-ca-amd64

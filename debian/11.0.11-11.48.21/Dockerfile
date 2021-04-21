@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM debian:buster-slim
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
@@ -12,9 +12,9 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
-    apt-get -qq -y --no-install-recommends install zulu16-jdk=16-* && \
+    apt-get -qq -y --no-install-recommends install zulu11-jdk=11.0.11-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu16-ca-amd64
+ENV JAVA_HOME=/usr/lib/jvm/zulu11-ca-amd64
