@@ -1,17 +1,13 @@
-What is Zulu? ![Zulu Duke in a Box][1]
+What is Azul Zulu? ![Zulu Duke in a Box][1]
 ======================================
 
-Zulu is a binary distribution of the open-source OpenJDK project for Linux, Windows, and MacOS operating systems.
+Azul Zulu builds of OpenJDK are fully tested and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
 
-Zulu distributions are fully tested and verified for compatibility builds of the latest versions of OpenJDK 7-16.
+Azul Zulu comes in two flavours: Azul Zulu Community Edition, a completely free version, and commercially supported Azul Zulu builds of OpenJDK.
 
-Zulu comes in two flavours: Zulu Community Edition, a completely free version, and Zulu Enterprise Edition that is backed by full commercial support.
+Check out [Azul Zulu Overview][3] for more information.
 
-Zulu is built, tested, supported, and delivered by [Azul Systems][2].
-
-Check out [Zulu Overview][3] for more information.
-
-Alpine, Centos, Debian, and Ubuntu Docker official images of Zulu are available in the following repositories:
+Alpine, Centos, Debian, and Ubuntu Docker official images of Azul Zulu are available in the following repositories:
 
   * [azul/zulu-openjdk-alpine][4]
   * [azul/zulu-openjdk-centos][5]
@@ -24,7 +20,6 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 
-The Zulu azul/zulu-openjdk repository provides various Ubuntu Docker image tags. The most recent Zulu versions of OpenJDK 16, 15, 14, 13, 11, 8, and 7 are listed below:
  * [`16.0.0`, `16` (*16.0.0/Dockerfile*)][120]
 
  * [`16.0.0-jre`, `16-jre` (*16.0.0-jre/Dockerfile*)][121]
@@ -44,7 +39,7 @@ The Zulu azul/zulu-openjdk repository provides various Ubuntu Docker image tags.
 Previous
 --------
 
-Earlier created Ubuntu Docker image tags of Zulu for previous update releases of OpenJDK 6-15 are as follows:
+Earlier created Ubuntu Docker image tags of Azul Zulu for previous update releases of OpenJDK 6-15 are as follows:
 * [15.0.1][118]
 
 * [14.0.1][116]
@@ -68,11 +63,11 @@ Earlier created Ubuntu Docker image tags of Zulu for previous update releases of
 Usage
 =====
 
-This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-16 of Zulu are compliant with Java SE 7-16 respectively.
+This repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-16 of Zulu are compliant with Java SE 7-16 respectively.
 
-To run a container of your choice, use commands below as an example.
+To run a container of your choice, use the commands below as an example.
 
-For a Zulu OpenJDK 11 container, enter:
+For Azul Zulu 11, run:
 
     docker run -it --rm azul/zulu-openjdk:11 java -version
 

@@ -1,21 +1,18 @@
-Alpine-Native Zulu OpenJDK Images
+Alpine-Native Azul Zulu Images
 =================================
-Images of zulu-openjdk-alpine include Alpine-native Zulu binary distributions of OpenJDK, which use the built-in musl libc functionality in Alpine Linux, and do not add glibc on top of Alpine distribution.
+The `zulu-openjdk-alpine` image includes Alpine-native Azul Zulu builds of OpenJDK, which use the built-in musl libc functionality and do not add glibc on top of the Alpine distribution.
 
-What is Zulu? ![Zulu Duke in a Box][1]
+
+What is Azul Zulu? ![Zulu Duke in a Box][1]
 ======================================
 
-Zulu is a binary distribution of the open-source OpenJDK project for Linux, Windows, and MacOS operating systems.
+Azul Zulu builds of OpenJDK are fully tested and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
 
-Zulu distributions are fully tested and verified for compatibility builds of the latest versions of OpenJDK 7-16.
+Azul Zulu comes in two flavours: Azul Zulu Community Edition, a completely free version, and commercially supported Azul Zulu builds of OpenJDK.
 
-Zulu comes in two flavours: Zulu Community Edition, a completely free version, and Zulu Enterprise Edition that is backed by full commercial support.
+Check out [Azul Zulu Overview][3] for more information.
 
-Zulu is built, tested, supported, and delivered by [Azul Systems][2].
-
-Check out [Zulu Overview][3] for more information.
-
-Alpine, Centos, Debian, and Ubuntu Docker official images of Zulu are available in the following repositories:
+Alpine, Centos, Debian, and Ubuntu Docker official images of Azul Zulu are available in the following repositories:
 
   * [azul/zulu-openjdk-alpine][4]
   * [azul/zulu-openjdk-centos][5]
@@ -27,8 +24,6 @@ Tags and `Dockerfile` links
 
 Most Recent
 -----------
-
-The Zulu azul/zulu-openjdk-alpine repository provides various Alpine Docker image tags. The most recent Zulu versions of OpenJDK 8-16 are listed below:
 
  * [`16.0.0`, `16` (*16.0.0/Dockerfile*)][95]
 
@@ -49,7 +44,7 @@ The Zulu azul/zulu-openjdk-alpine repository provides various Alpine Docker imag
 Previous
 --------
 
-Earlier created Alpine Docker image tags of Zulu for previous releases of OpenJDK 7-14 are as follows:
+Earlier Alpine Docker image tags of Azul Zulu:
 
 * [15.0.0][92], [15.0.1][93]
 
@@ -67,16 +62,16 @@ Earlier created Alpine Docker image tags of Zulu for previous releases of OpenJD
 
 * [6u93][10], [6u97][11], [6u99][12], [6u103][13], [6u107][14], [6u113][15], [6u119][16]
 
-**Note**: Some of these may be using glibc and predate the move to musl libc.
+**Note**: Some of these may use glibc and predate the move to musl libc.
 
 Usage
 =====
 
-This Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-16 of Zulu are compliant with Java 7-16 respectively.
+This Azul Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-16 of Azul Zulu are compliant with Java 7-16 respectively.
 
 To run a container of your choice, use the command below as an example.
 
-For a Zulu OpenJDK 11 container, enter:
+To start Azul Zulu 11 in a container, enter:
 
     docker run -it --rm azul/zulu-openjdk-alpine:11 java -version
 
