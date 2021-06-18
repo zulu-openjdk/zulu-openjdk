@@ -1,0 +1,1 @@
+../../alpine/16.0.1-16.30.15-jre/Dockerfile

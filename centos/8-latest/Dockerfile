@@ -1,1 +1,1 @@
-../8u282-8.52.0.23/Dockerfile
+../../centos/8u292-8.54.0.21/Dockerfile
