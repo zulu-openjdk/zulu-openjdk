@@ -1,1 +1,1 @@
-../13.0.4-13.33.25-jre-headless/Dockerfile
+../../alpine/13.0.7-13.40.15-jre-headless/Dockerfile
