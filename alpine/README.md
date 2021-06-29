@@ -3,7 +3,7 @@ Alpine-Native Azul Zulu Images
 The `zulu-openjdk-alpine` image includes Alpine-native Azul Zulu builds of OpenJDK, which use the built-in musl libc functionality and do not add glibc on top of the Alpine distribution.
 
 
-What is Azul Zulu? ![Zulu Duke in a Box][1]
+What is Azul Zulu?
 ======================================
 
 Azul Zulu builds of OpenJDK are fully tested and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
