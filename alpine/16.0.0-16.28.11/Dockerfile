@@ -6,6 +6,6 @@ ENV LC_ALL en_US.UTF-8
 
 RUN wget --quiet https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc44c.rsa.pub -P /etc/apk/keys/ && \
     echo "https://repos.azul.com/zulu/alpine" >> /etc/apk/repositories && \
-    apk --no-cache add zulu16-jdk
+    apk --no-cache add zulu16-jdk=16-r1
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu16-ca
