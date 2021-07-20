@@ -1,12 +1,18 @@
 import os
+import sys
 
 from jinja2 import Template
+
+github_base_path = 'https://github.com/zulu-openjdk/zulu-openjdk/blob/master'
+
+if len(sys.argv) > 1:
+    os.chdir(sys.argv[1])
+    github_base_path += '/{}'.format(sys.argv[1])
 
 # Create a list of directories that names start with a digit
 ubuntu_dirs = [x[0] for x in os.walk('.') if len(x[0]) > 2 and x[0][2].isdigit()]
 
 ver_path_dict = {}
-github_base_path = 'https://github.com/zulu-openjdk/zulu-openjdk/blob/master'
 
 # Create a dictionary with OpenJDK versions and paths to Dockerfiles
 for directory in ubuntu_dirs:
