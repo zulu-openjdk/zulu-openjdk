@@ -1,0 +1,63 @@
+What is Azul Zulu? 
+======================================
+
+Azul Zulu builds of OpenJDK are fully tested and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
+
+Azul Zulu comes in two flavours: Azul Zulu Community Edition, a completely free version, and commercially supported Azul Zulu builds of OpenJDK.
+
+Check out [Azul Zulu Overview][3] for more information.
+
+Alpine, Centos, Debian, and Ubuntu Docker official images of Zulu are available in the following repositories:
+
+  * [azul/zulu-openjdk-alpine][4]
+  * [azul/zulu-openjdk-centos][5]
+  * [azul/zulu-openjdk-debian][6]
+  * [azul/zulu-openjdk][7]
+
+Tags and `Dockerfile` links
+===========================
+
+Most Recent
+-----------
+{% for version in versions -%}
+  {% set keys = links[version].keys() | list %}
+  {%- set values = links[version].values() | list %}
+  {%- set url_split = (values)[0][1].split('/') %}
+  * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
+{%- endfor %}
+
+Previous
+--------
+
+Earlier Ubuntu Docker image tags of Azul Zulu:
+{% for version in versions -%}
+  {% set items = links[version].items() %}
+  * {% for item in items -%}
+    [{{ item[1][0] }}][{{ item[0] }}],
+  {% endfor %}
+{%- endfor %}
+
+Usage
+=====
+
+This Azul Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-16 of Azul Zulu are compliant with Java SE 7-16 respectively.
+
+To run a container of your choice, use commands below as an example.
+
+For Azul Zulu OpenJDK 11, run:
+
+    docker run -it --rm azul/zulu-openjdk:11 java -version
+
+  [1]: https://www.azul.com/files/ZuluDocker60.gif
+  [2]: https://www.azul.com/
+  [3]: https://www.azul.com/products/zulu-community/
+  [4]: https://hub.docker.com/r/azul/zulu-openjdk-alpine
+  [5]: https://hub.docker.com/r/azul/zulu-openjdk-centos
+  [6]: https://hub.docker.com/r/azul/zulu-openjdk-debian
+  [7]: https://hub.docker.com/r/azul/zulu-openjdk
+
+{% for major_ver, body in links.items() %}
+  {% for (num, ver) in body.items() -%}
+    [{{ num }}]: {{ ver[1] }}
+  {% endfor -%}
+{% endfor %}
