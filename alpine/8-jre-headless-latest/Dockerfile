@@ -1,1 +1,1 @@
-../8u262-8.48.0.51-jre-headless/Dockerfile
+../../alpine/8u302-8.56.0.21-jre-headless/Dockerfile

@@ -1,1 +1,1 @@
-../../alpine/8u292-8.54.0.21/Dockerfile
+../../alpine/8u302-8.56.0.21/Dockerfile
