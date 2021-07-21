@@ -1,1 +1,1 @@
-../../alpine/7u302-7.46.0.11/Dockerfile
+../../alpine/7u312-7.48.0.11/Dockerfile

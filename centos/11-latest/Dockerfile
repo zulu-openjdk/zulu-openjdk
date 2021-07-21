@@ -1,1 +1,1 @@
-../../centos/11.0.11-11.48.21/Dockerfile
+../../centos/11.0.12-11.50.19/Dockerfile
