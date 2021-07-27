@@ -30,7 +30,7 @@ Most Recent
   * [`13.0.8`, `13` (*13-latest/Dockerfile)*][123]
   * [`14.0.2`, `14` (*14-latest/Dockerfile)*][132]
   * [`15.0.4`, `15` (*15-latest/Dockerfile)*][135]
-  * [`16.0.1`, `16` (*16-latest/Dockerfile)*][140]
+  * [`16.0.2`, `16` (*16-latest/Dockerfile)*][140]
 
 Previous
 --------
@@ -180,6 +180,7 @@ Earlier Ubuntu Docker image tags of Azul Zulu for previous update releases of Op
   * [16][140],
   [16.0.0][141],
   [16.0.1][142],
+  [16.0.2][143],
   
 
 Usage
@@ -345,4 +346,5 @@ To run Azul Zulu OpenJDK 11 in a container, enter:
   [140]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/debian/16-latest/Dockerfile
   [141]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/debian/16.0.0-16.28.11-jre/Dockerfile
   [142]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/debian/16.0.1-16.30.15-jre/Dockerfile
+  [143]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/debian/16.0.2-16.32.15-jre/Dockerfile
   
