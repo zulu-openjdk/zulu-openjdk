@@ -30,7 +30,7 @@ Most Recent
   * [`13.0.8`, `13` (*13-latest/Dockerfile)*][119]
   * [`14.0.2`, `14` (*14-latest/Dockerfile)*][128]
   * [`15.0.4`, `15` (*15-latest/Dockerfile)*][131]
-  * [`16.0.1`, `16` (*16-latest/Dockerfile)*][137]
+  * [`16.0.2`, `16` (*16-latest/Dockerfile)*][137]
 
 Previous
 --------
@@ -177,6 +177,7 @@ Earlier Ubuntu Docker image tags of Azul Zulu:
   * [16][137],
   [16.0.0][138],
   [16.0.1][139],
+  [16.0.2][140],
   
 
 Usage
@@ -339,4 +340,5 @@ For Azul Zulu OpenJDK 11, run:
   [137]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/16-latest/Dockerfile
   [138]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/16.0.0-16.28.11-jre/Dockerfile
   [139]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/16.0.1-16.30.15-jre/Dockerfile
+  [140]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/16.0.2-16.32.15-jre/Dockerfile
   

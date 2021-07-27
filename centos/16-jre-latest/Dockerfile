@@ -1,1 +1,1 @@
-../../centos/16.0.1-16.30.15-jre/Dockerfile
+../../centos/16.0.2-16.32.15-jre/Dockerfile
