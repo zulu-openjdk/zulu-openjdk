@@ -1,0 +1,1 @@
+../../centos/17.0.0-17.28.13-jre-headless/Dockerfile
