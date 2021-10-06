@@ -12,6 +12,7 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
+    echo -e "Package: zulu13-*\nPin: version 13.0.8-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu13-jdk=13.0.8-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
