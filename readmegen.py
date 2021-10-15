@@ -16,19 +16,20 @@ ver_path_dict = {}
 
 # Create a dictionary with OpenJDK versions and paths to Dockerfiles
 for directory in ubuntu_dirs:
-    ver = directory.split('-')[0][2:]
+    ver = directory.split('/')[-1]
     ver_path_dict[ver] = '{}/{}/Dockerfile'.format(github_base_path, directory[2:])
 
 # Create a list with major versions like [6, 7]
-versions = sorted([ver for ver in ver_path_dict.keys() if 1 <= len(ver) <= 3],
-                  key=lambda version: '{0:0>9}'.format(version).lower())
+versions = sorted([ver.removesuffix('-latest') for ver in ver_path_dict.keys() if "latest" in ver],
+                  key=lambda version: '{0:0>90}'.format(version).lower())
+versions.reverse()
 
 # Created a sorted list of versions
 versions_list = []
 for ver in versions:
     versions_list += sorted([x for x in ver_path_dict.items()
                              if x[0][0] == ver or x[0][0:2] == ver],
-                            key=lambda version: '{0:0>9}'.format(version[0]).lower())
+                            key=lambda version: '{0:0>90}'.format(version[0]).lower())
 
 # Enumerate items in the list with versions to use it in template as pointers to links
 num_ver_dict = {}
@@ -38,8 +39,34 @@ for num, ver in enumerate(versions_list, start=10):
 # Split the dictionary by major versions
 num_ver_dict_by_ver = {}
 for version in versions:
-    num_ver_dict_by_ver[version] = {num: ver for (num, ver) in num_ver_dict.items() if
-                                    ver[0][0] == version or ver[0][0:2] == version}
+    numbered_versions = {}
+    for (num, ver) in num_ver_dict.items():
+        if ver[0][0] == version.split('-')[0] \
+                and version.split('-')[-1] == 'jre' \
+                and (ver[0].split('-')[-1] == 'jre' or 'jre-latest' in ver[0]):
+            numbered_versions[num] = ver
+        elif ver[0][0:2] == version.split('-')[0] \
+                and version.split('-')[-1] == 'jre' \
+                and (ver[0].split('-')[-1] == 'jre' or 'jre-latest' in ver[0]):
+            numbered_versions[num] = ver
+        elif ver[0][0] == version.split('-')[0] \
+                and version.split('-')[-1] == 'headless' \
+                and (ver[0].split('-')[-1] == 'headless' or 'headless-latest' in ver[0]):
+            numbered_versions[num] = ver
+        elif ver[0][0:2] == version.split('-')[0] \
+                and version.split('-')[-1] == 'headless' \
+                and (ver[0].split('-')[-1] == 'headless' or 'headless-latest' in ver[0]):
+            numbered_versions[num] = ver
+        elif ver[0][0] == version.split('-')[0] \
+                and version.isnumeric() \
+                and 'jre' not in ver[0] and 'headless' not in ver[0]:
+            numbered_versions[num] = ver
+        elif ver[0][0:2] == version.split('-')[0] \
+                and version.isnumeric() \
+                and 'jre' not in ver[0] and 'headless' not in ver[0]:
+            numbered_versions[num] = ver
+
+    num_ver_dict_by_ver[version] = numbered_versions
 
 # Open a template
 with open('README.j2') as temp_file:

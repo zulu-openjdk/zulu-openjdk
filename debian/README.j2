@@ -1,11 +1,10 @@
 What is Azul Zulu?
 ======================================
 
-Azul Zulu builds of OpenJDK are fully tested and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
+Azul Zulu builds of OpenJDK are fully tested, and TCK compliant builds of OpenJDK for Linux, Windows, and macOS operating systems.
 
-Azul Zulu comes in two flavours: Azul Zulu Community Edition, a completely free version, and commercially supported Azul Zulu builds of OpenJDK.
-
-Check out [Azul Zulu Overview][3] for more information.
+Azul Zulu Builds of OpenJDK are available for free unlimited use and are commercially supported by Azul as a part of the Azul Platform Core bundle.
+Check out [Azul Platform Core][3] for more information.
 
 Alpine, Centos, Debian, and Ubuntu Docker official images of Zulu are available in the following repositories:
 
@@ -20,10 +19,12 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 {% for version in versions -%}
-  {% set keys = links[version].keys() | list %}
-  {%- set values = links[version].values() | list %}
-  {%- set url_split = (values)[0][1].split('/') %}
+  {% if 'jre' not in version -%}
+    {% set keys = links[version].keys() | list %}
+    {%- set values = links[version].values() | list %}
+    {%- set url_split = (values)[0][1].split('/') %}
   * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
+  {%- endif %}
 {%- endfor %}
 
 Previous
@@ -40,17 +41,17 @@ Earlier Ubuntu Docker image tags of Azul Zulu for previous update releases of Op
 Usage
 =====
 
-This Azul Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-16 of Azul Zulu are compliant with Java SE 7-16 respectively.
+This Azul Zulu repository supports numerous versions of OpenJDK-based Java SE JDKs. Versions 7-17 of Azul Zulu are compliant with Java SE 7-17 respectively.
 
 To run a container of your choice, use commands below as an example.
 
 To run Azul Zulu OpenJDK 11 in a container, enter:
 
-    docker run -it --rm azul/zulu-openjdk:11 java -version
+    docker run -it --rm azul/zulu-openjdk-debian:11 java -version
 
   [1]: https://www.azul.com/files/ZuluDocker60.gif
   [2]: https://www.azul.com/
-  [3]: https://www.azul.com/products/zulu-community/
+  [3]: https://www.azul.com/products/core/
   [4]: https://hub.docker.com/r/azul/zulu-openjdk-alpine
   [5]: https://hub.docker.com/r/azul/zulu-openjdk-centos
   [6]: https://hub.docker.com/r/azul/zulu-openjdk-debian
