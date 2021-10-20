@@ -1,1 +1,1 @@
-../../alpine/13.0.8-13.42.17-jre/Dockerfile
+../../alpine/13.0.9-13.44.13-jre/Dockerfile
