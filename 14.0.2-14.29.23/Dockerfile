@@ -8,6 +8,7 @@ RUN apt-get -qq update && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0x219BD9C9 && \
     apt-add-repository -u "deb http://repos.azulsystems.com/ubuntu stable main" && \
     apt-get -qq -y dist-upgrade && \
+    echo "Package: zulu14-*\nPin: version 14.29+23*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu-14=14.29+23* && \
     apt-get -qq -y purge gnupg software-properties-common && \
     apt -y autoremove && \

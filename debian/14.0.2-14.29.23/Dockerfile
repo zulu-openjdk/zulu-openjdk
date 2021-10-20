@@ -9,6 +9,7 @@ RUN apt-get -qq update && \
     apt-add-repository -u "deb http://repos.azulsystems.com/debian stable main" && \
     mkdir -p /usr/share/man/man1 && \
     apt-get -qq -y dist-upgrade && \
+    echo "Package: zulu14-*\nPin: version 14.29+23*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu-14=14.29+23* && \
     apt-get -qq -y purge gnupg software-properties-common && \
     apt -y autoremove && \

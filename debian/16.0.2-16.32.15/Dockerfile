@@ -12,7 +12,7 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
-    echo "Package: zulu16-*\nPin: version 16.0.2-*\nPin-Priority: 1001" > /etc/apt/preferences && \
+    echo "Package: zulu16-*\nPin: version 16.32+15*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu16-jdk=16.0.2-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
