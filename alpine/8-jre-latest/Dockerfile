@@ -1,1 +1,1 @@
-../../alpine/8u312-8.58.0.13-jre/Dockerfile
+../../alpine/8u322-8.60.0.21-jre/Dockerfile_x86

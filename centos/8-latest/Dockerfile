@@ -1,1 +1,1 @@
-../../centos/8u312-8.58.0.13/Dockerfile
+../../centos/8u322-8.60.0.21/Dockerfile_x86

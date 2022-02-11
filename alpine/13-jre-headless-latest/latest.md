@@ -1,1 +1,1 @@
-../../alpine/13.0.9-13.44.13-jre-headless/13.44.13.md
+../../alpine/13.0.10-13.46.15-jre-headless/13.46.15_x86.md

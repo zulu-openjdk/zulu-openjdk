@@ -1,1 +1,1 @@
-../../alpine/11.0.13-11.52.13-jre/Dockerfile
+../../alpine/11.0.14-11.54.23-jre/Dockerfile_x86
