@@ -1,1 +1,1 @@
-../../alpine/7u322-7.50.0.11/Dockerfile
+../../alpine/7u332-7.52.0.11/Dockerfile_x86

@@ -1,1 +1,1 @@
-../../centos/15.0.5-15.36.13/Dockerfile
+../../centos/15.0.6-15.38.17/Dockerfile_x86
