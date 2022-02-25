@@ -1,1 +1,1 @@
-../../debian/17.0.1-17.30.15-jre/Dockerfile
+../../debian/17.0.2-17.32.13-jre/Dockerfile_x86
