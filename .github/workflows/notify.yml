@@ -15,9 +15,9 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   issue_created:
-    if: github.event.type == 'IssuesEvent'
     runs-on: ubuntu-latest
     steps:
+      - run: echo ${{github.event.type}} ${{ github.event.type == 'IssuesEvent' }} ${{github.event}}
       - name: slack-notify
         uses: slackapi/slack-github-action@v1.18.0
         with:
