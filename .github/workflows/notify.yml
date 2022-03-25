@@ -14,7 +14,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  issue_commented:
+  issue_created:
+    if: github.event.type == "IssuesEvent"
     runs-on: ubuntu-latest
     steps:
       - name: slack-notify
@@ -26,5 +27,19 @@ jobs:
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  pr_created:
+    if: github.event.type == "PullRequestEvent" && github.event.action == "opened"
+    runs-on: ubuntu-latest
+    steps:
+      - name: slack-notify
+        uses: slackapi/slack-github-action@v1.18.0
+        with:
+          payload: |
+            {
+              "Issue": "${{github.event.pull_request.html}}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
 
     
