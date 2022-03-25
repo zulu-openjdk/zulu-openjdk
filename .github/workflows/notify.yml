@@ -28,7 +28,7 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
   pr_created:
-    if: github.event.type == "PullRequestEvent" && github.event.action == "opened"
+    if: github.event.type == "PullRequestEvent"
     runs-on: ubuntu-latest
     steps:
       - name: slack-notify
