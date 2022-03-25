@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Notify Issue
+
+on:
+  issues:
+    types: [ opened ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  issue_created:
+    runs-on: ubuntu-latest
+    steps:
+      - name: slack-notify
+        uses: slackapi/slack-github-action@v1.18.0
+        with:
+          payload: |
+            {
+              "Issue": "${{github.event.issue.html_url}}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
