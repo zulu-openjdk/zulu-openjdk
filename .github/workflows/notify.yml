@@ -24,4 +24,7 @@ jobs:
             {
               "Issue": "${{github.event.issue.html_url}}"
             }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
     
