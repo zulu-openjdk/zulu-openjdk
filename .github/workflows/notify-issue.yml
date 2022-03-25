@@ -1,11 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Slack Notification
+name: Notify Issue
 
-# Controls when the workflow will run
 on:
-  pull_request:
-    branches: [ master ]
   issues:
     types: [ opened ]
 
@@ -17,7 +14,6 @@ jobs:
   issue_created:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{github.event.type}} ${{ github.event.type == 'IssuesEvent' }} ${{github.event}}
       - name: slack-notify
         uses: slackapi/slack-github-action@v1.18.0
         with:
@@ -27,19 +23,3 @@ jobs:
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-  pr_created:
-    if: github.event.type == 'PullRequestEvent'
-    runs-on: ubuntu-latest
-    steps:
-      - name: slack-notify
-        uses: slackapi/slack-github-action@v1.18.0
-        with:
-          payload: |
-            {
-              "Issue": "${{github.event.pull_request.html}}"
-            }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
-
-    
