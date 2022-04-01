@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.15
 
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
@@ -10,7 +10,7 @@ RUN ZULU_PACK=${ZULU_DIR}.tar.gz && \
     INSTALL_DIR=/usr/lib/jvm && \
     BIN_DIR=/usr/bin && \
     MAN_DIR=/usr/share/man/man1 && \
-    apk --no-cache add ca-certificates wget tar && \
+    apk --no-cache add ca-certificates wget tar tzdata && \
     apk --no-cache --virtual .build-deps add binutils zstd && \
     apk update && \
     apk upgrade && \

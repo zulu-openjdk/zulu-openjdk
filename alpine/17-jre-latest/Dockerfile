@@ -1,1 +1,1 @@
-../../alpine/17.0.2-17.32.13-jre/Dockerfile_x86
+../../alpine/17.0.2-17.32.13-jre/Dockerfile_arm64
