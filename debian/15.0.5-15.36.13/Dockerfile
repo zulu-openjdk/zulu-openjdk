@@ -12,7 +12,7 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
-    echo "Package: zulu15-*\nPin: version 15.36+13*\nPin-Priority: 1001" > /etc/apt/preferences && \
+    echo "Package: zulu15-*\nPin: version 15.0.5-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu15-jdk=15.0.5-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
