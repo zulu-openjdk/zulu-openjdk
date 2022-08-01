@@ -13,8 +13,8 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
-    echo "Package: zulu17-*\nPin: version 17.0.3-*\nPin-Priority: 1001" > /etc/apt/preferences && \
-    apt-get -qq -y --no-install-recommends install zulu17-jre=17.0.3-* && \
+    echo "Package: zulu17-*\nPin: version 17.0.4-*\nPin-Priority: 1001" > /etc/apt/preferences && \
+    apt-get -qq -y --no-install-recommends install zulu17-jre=17.0.4-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
