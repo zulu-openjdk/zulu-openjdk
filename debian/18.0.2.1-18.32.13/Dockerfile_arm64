@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM debian:bullseye-slim
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
@@ -19,4 +19,4 @@ RUN apt-get -qq update && \
     apt -y autoremove && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu18-ca-amd64
+ENV JAVA_HOME=/usr/lib/jvm/zulu18-ca-arm64
