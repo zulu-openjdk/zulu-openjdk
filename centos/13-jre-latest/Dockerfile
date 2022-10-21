@@ -17,7 +17,7 @@ RUN rpm --import http://repos.azulsystems.com/RPM-GPG-KEY-azulsystems && \
     yum -q -y update && \
     yum -q -y upgrade && \
     yum -q -y install yum-plugin-versionlock tzdata && \
-    yum versionlock zulu13-*-13.0.12-* && \
+    yum versionlock zulu13-*-13.0.13-* && \
     yum -q -y install zulu13-jre && \
     yum clean all && \
     rm -rf /var/cache/yum zulu-repo_${ZULU_REPO_VER}.noarch.rpm
