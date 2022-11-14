@@ -19,7 +19,7 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 {% for version in versions -%}
-  {% if 'jre' not in version -%}
+  {% if ( 'jre' not in version and 'distroless' not in version ) -%}
     {% set keys = links[version].keys() | list %}
     {%- set values = links[version].values() | list %}
     {%- set url_split = (values)[0][1].split('/') %}

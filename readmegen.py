@@ -58,12 +58,20 @@ for version in versions:
                 and (ver[0].split('-')[-1] == 'headless' or 'headless-latest' in ver[0]):
             numbered_versions[num] = ver
         elif ver[0][0] == version.split('-')[0] \
+                and version.split('-')[-1] == 'distroless' \
+                and (ver[0].split('-')[-1] == 'distroless' or 'distroless-latest' in ver[0]):
+            numbered_versions[num] = ver
+        elif ver[0][0:2] == version.split('-')[0] \
+                and version.split('-')[-1] == 'distroless' \
+                and (ver[0].split('-')[-1] == 'distroless' or 'distroless-latest' in ver[0]):
+            numbered_versions[num] = ver
+        elif ver[0][0] == version.split('-')[0] \
                 and version.isnumeric() \
                 and 'jre' not in ver[0] and 'headless' not in ver[0]:
             numbered_versions[num] = ver
         elif ver[0][0:2] == version.split('-')[0] \
                 and version.isnumeric() \
-                and 'jre' not in ver[0] and 'headless' not in ver[0]:
+                and 'jre' not in ver[0] and 'headless' not in ver[0] and 'distroless' not in ver[0]:
             numbered_versions[num] = ver
 
     num_ver_dict_by_ver[version] = numbered_versions
