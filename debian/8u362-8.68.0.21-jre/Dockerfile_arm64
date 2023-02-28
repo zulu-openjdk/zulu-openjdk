@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM debian:bullseye-slim
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
@@ -13,10 +13,10 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq -y dist-upgrade && \
     mkdir -p /usr/share/man/man1 && \
-    echo "Package: zulu11-*\nPin: version 11.0.18-*\nPin-Priority: 1001" > /etc/apt/preferences && \
-    apt-get -qq -y --no-install-recommends install zulu11-jdk=11.0.18-* && \
+    echo "Package: zulu8-*\nPin: version 8.0.362-*\nPin-Priority: 1001" > /etc/apt/preferences && \
+    apt-get -qq -y --no-install-recommends install zulu8-jre=8.0.362-* && \
     apt-get -qq -y purge gnupg software-properties-common curl && \
     apt -y autoremove && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu11-ca-arm64
+ENV JAVA_HOME=/usr/lib/jvm/zulu8-ca-arm64
