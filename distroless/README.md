@@ -34,24 +34,13 @@ Tags and `Dockerfile` links
 
 Most Recent
 -----------
-{% for version in versions -%}
-  {% if ( 'jre' not in version and 'distroless' not in version ) -%}
-    {% set keys = links[version].keys() | list %}
-    {%- set values = links[version].values() | list %}
-    {%- set url_split = (values)[0][1].split('/') %}
-  * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
-  {%- endif %}
-{%- endfor %}
+
 
 Previous
 --------
 Earlier created Ubuntu Docker image tags of Azul Zulu for previous update releases of OpenJDK 6-16 are as follows:
-{% for version in versions -%}
-  {% set items = links[version].items() %}
-  * {% for item in items -%}
-    [{{ item[1][0] }}][{{ item[0] }}],
-  {% endfor %}
-{%- endfor %}
+
+  * 
 
   [1]: https://www.azul.com/files/ZuluDocker60.gif
   [2]: https://www.azul.com/
@@ -62,8 +51,5 @@ Earlier created Ubuntu Docker image tags of Azul Zulu for previous update releas
   [7]: https://hub.docker.com/r/azul/zulu-openjdk
   [8]: https://hub.docker.com/r/azul/zulu-openjdk-distroless
 
-{% for major_ver, body in links.items() %}
-  {% for (num, ver) in body.items() -%}
-    [{{ num }}]: {{ ver[1] }}
-  {% endfor -%}
-{% endfor %}
+
+  
