@@ -35,12 +35,19 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 
+  * [`17.0.6-17.40.19-distroless`, `17-latest` (*17-latest/Dockerfile)*][10]
 
 Previous
 --------
 Earlier created Ubuntu Docker image tags of Azul Zulu for previous update releases of OpenJDK 6-16 are as follows:
 
   * 
+  * [17-latest][10],
+  [17.0.6-17.40.19][11],
+  [17-distroless-latest][12],
+  [17.0.5-17.38.21-distroless][13],
+  [17.0.6-17.40.19-distroless][14],
+  
 
   [1]: https://www.azul.com/files/ZuluDocker60.gif
   [2]: https://www.azul.com/
@@ -52,4 +59,10 @@ Earlier created Ubuntu Docker image tags of Azul Zulu for previous update releas
   [8]: https://hub.docker.com/r/azul/zulu-openjdk-distroless
 
 
+  
+  [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-latest/Dockerfile
+  [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
+  [12]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-distroless-latest/Dockerfile
+  [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.5-17.38.21-distroless/Dockerfile
+  [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19-distroless/Dockerfile
   
