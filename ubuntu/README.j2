@@ -15,19 +15,19 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 
- {% for version in versions -%}
-   {% if 'jre' not in version -%}
-     {% set keys = links[version].keys() | list %}
-     {%- set values = links[version].values() | list %}
-     {%- set url_split = (values)[0][1].split('/') %}
-   * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
-   {%- endif %}
- {%- endfor %}
+{% for version in versions -%}
+  {% if 'jre' not in version -%}
+    {% set keys = links[version].keys() | list %}
+    {%- set values = links[version].values() | list %}
+    {%- set url_split = (values)[0][1].split('/') %}
+  * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
+  {%- endif %}
+{%- endfor %}
 
 Previous
 --------
 
-Earlier CentOS Docker image tags of Azul Zulu for previous update releases of OpenJDK are as follows:
+Earlier Ubuntu Docker image tags of Azul Zulu for previous update releases of OpenJDK are as follows:
 
 {% for version in versions -%}
   {% set items = links[version].items() %}
@@ -35,9 +35,6 @@ Earlier CentOS Docker image tags of Azul Zulu for previous update releases of Op
     [{{ item[1][0] }}][{{ item[0] }}],
   {% endfor %}
 {%- endfor %}
-
-References
-==========
 
   [1]: https://www.azul.com/products/core/
   [2]: https://docs.azul.com/core/
