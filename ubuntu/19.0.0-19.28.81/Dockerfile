@@ -19,4 +19,4 @@ RUN apt-get -qq update && \
     apt -y autoremove && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
-ENV JAVA_HOME=/usr/lib/jvm/zulu19-ca-amd64
+ENV JAVA_HOME=/usr/lib/jvm/zulu19

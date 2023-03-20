@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/zulu18-ca-amd64`
+  - `JAVA_HOME=/usr/lib/jvm/zulu18`
 
 ## `dpkg` (`.deb`-based packages)
 
