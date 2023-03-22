@@ -31,6 +31,7 @@ as the entrypoint used [ "/usr/lib/jvm/zulu17/bin/java" ]
 
 Tags and `Dockerfile` links
 ===========================
+  * [20-latest (20-latest/Dockerfile)][24]
   * [19-latest (19-latest/Dockerfile)][23]
   * [18-latest (18-latest/Dockerfile)][22]
   * [17-latest (17-latest/Dockerfile)][21]
@@ -71,6 +72,7 @@ Tags and `Dockerfile` links
   [21]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/17-latest/Dockerfile
   [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/18-latest/Dockerfile
   [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/19-latest/Dockerfile
+  [24]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/20-latest/Dockerfile
 
 
 
