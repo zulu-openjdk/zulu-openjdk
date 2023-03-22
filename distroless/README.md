@@ -35,6 +35,6 @@ Earlier Distroless Docker image tags of Azul Zulu for previous update releases o
   [3]: https://hub.docker.com/r/azul/zulu-openjdk-distroless
 
 
-  [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless//17-latest/Dockerfile
-  [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless//17.0.6-17.40.19/Dockerfile
+  [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-latest/Dockerfile
+  [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
   
