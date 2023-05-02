@@ -8,11 +8,11 @@ Check out [Azul Platform Core][2] for more information. The technical documentat
 
 Docker images of Azul Zulu are available in the following repositories, depending on the base system:
 
-  * [azul/zulu-openjdk-ubuntu][4]
-  * [azul/zulu-openjdk-alpine][5]
-  * [azul/zulu-openjdk-centos][6]
-  * [azul/zulu-openjdk-debian][7]
-  * [azul/zulu-openjdk-distroless][8]
+  * [Ubuntu: azul/zulu-openjdk-ubuntu][4]
+  * [Alpine: azul/zulu-openjdk-alpine][5]
+  * [CentOS: azul/zulu-openjdk-centos][6]
+  * [Debian: azul/zulu-openjdk-debian][7]
+  * [Distroless: azul/zulu-openjdk-distroless][8]
 
 Usage
 =====
@@ -47,8 +47,6 @@ Tags and `Dockerfile` links
   * [7-latest (7-latest/Dockerfile)][11]
   * [6-latest (6-latest/Dockerfile)][10]
 
-
-
   [1]: https://www.azul.com/
   [2]: https://www.azul.com/products/core/
   [3]: https://docs.azul.com/core/
@@ -73,6 +71,7 @@ Tags and `Dockerfile` links
   [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/18-latest/Dockerfile
   [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/19-latest/Dockerfile
   [24]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/ubuntu/20-latest/Dockerfile
+
 
 
 

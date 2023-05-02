@@ -33,7 +33,7 @@ for ver in versions:
 
 # Enumerate items in the list with versions to use it in template as pointers to links
 num_ver_dict = {}
-for num, ver in enumerate(versions_list, start=10):
+for num, ver in enumerate(versions_list, start=11):  # links start from [11]
     num_ver_dict[num] = ver
 
 # Split the dictionary by major versions
