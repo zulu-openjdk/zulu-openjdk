@@ -9,7 +9,7 @@ RUN rpm --import https://repos.azulsystems.com/RPM-GPG-KEY-azulsystems && \
     curl -sLO https://cdn.azul.com/zulu/bin/zulu-repo-${ZULU_REPO_VER}.noarch.rpm && \
     echo "${ZULU_REPO_SHA256}  zulu-repo-${ZULU_REPO_VER}.noarch.rpm" | sha256sum --strict --check - && \
     rpm -ivh zulu-repo-${ZULU_REPO_VER}.noarch.rpm && \
-    yum -q -y install yum-plugin-versionlock tzdata && \
+    yum -q -y install yum-plugin-versionlock tzdata fontconfig && \
     yum versionlock zulu8-*-8.0.382-* && \
     yum -q -y install zulu8-jre && \
     yum clean all && \
