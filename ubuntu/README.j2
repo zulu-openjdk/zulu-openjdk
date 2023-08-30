@@ -20,8 +20,8 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 
-{% for version in versions -%}
-  {% if 'jre' not in version -%}
+{% for version in versions  -%}
+  {% if ( 'jre' not in version and 'crac' not in version ) -%}
     {% set keys = links[version].keys() | list %}
     {%- set values = links[version].values() | list %}
     {%- set url_split = (values)[0][1].split('/') %}
@@ -52,9 +52,6 @@ As with all Docker images, these likely also contain other software which may be
 As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
 
 [BSD 3-Clause Clear License][10]
-
-Links
-=====
 
   [1]: https://www.azul.com/
   [2]: https://www.azul.com/products/core/
