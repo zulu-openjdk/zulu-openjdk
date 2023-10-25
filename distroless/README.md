@@ -34,7 +34,8 @@ Earlier Distroless Docker image tags of Azul Zulu for previous update releases o
   [17.0.6-17.40.19][12],
   [17.0.7-17.42.19][13],
   [17.0.8-17.44.15][14],
-  [17.0.8.1-17.44.53][15],
+  [17.0.9-17.46.19][15],
+  [17.0.8.1-17.44.53][16],
   
 
 License
@@ -65,5 +66,6 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [12]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
   [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.7-17.42.19/Dockerfile
   [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8-17.44.15/Dockerfile
-  [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8.1-17.44.53/Dockerfile
+  [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.9-17.46.19/Dockerfile
+  [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8.1-17.44.53/Dockerfile
   
