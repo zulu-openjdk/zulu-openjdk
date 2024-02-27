@@ -33,14 +33,16 @@ Most Recent
 Previous
 --------
 
-Earlier Alpine Docker image tags of Azul Zulu for previous update releases of OpenJDK are as follows:
+Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previous update releases of OpenJDK are as follows:
 
 {% for version in versions -%}
   {% set items = links[version].items() %}
-  * {% for item in items -%}
+  * {%- for item in items -%}
+    {%- if loop.index <= 4 -%}
     [{{ item[1][0] }}][{{ item[0] }}],
+    {%- endif %}
   {% endfor %}
-{%- endfor %}
+{%- endfor -%}
 
 **Note**: Some of these may use glibc and predate the move to musl libc.
 
@@ -55,7 +57,6 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
 
 [BSD 3-Clause Clear License][10]
 
-
   [1]: https://www.azul.com/
   [2]: https://www.azul.com/products/core/
   [3]: https://docs.azul.com/core/
@@ -69,6 +70,8 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
 
 {% for major_ver, body in links.items() %}
   {% for (num, ver) in body.items() -%}
-    [{{ num }}]: {{ ver[1] }}
+    {%- if loop.index <= 4 -%}
+      [{{ num }}]: {{ ver[1] }}
+    {%- endif %}
   {% endfor -%}
 {% endfor %}
