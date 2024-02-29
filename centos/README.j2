@@ -4,7 +4,7 @@ Azul Zulu CentOS
 These Docker images of Azul Zulu Build of OpenJDK are based on CentOS.
 
 Azul Zulu Builds of OpenJDK are available for free unlimited use and are commercially supported by [Azul][1] as a part of the Azul Platform Core bundle.
-                                Check out [Azul Platform Core][2] for more information. The technical documentation can be found on [docs.azul.com/core][3].
+Check out [Azul Platform Core][2] for more information. The technical documentation can be found on [docs.azul.com/core][3].
 
 Docker images of Azul Zulu are available in the following repositories, depending on the base system:
 
@@ -20,26 +20,28 @@ Tags and `Dockerfile` links
 Most Recent
 -----------
 
- {% for version in versions -%}
-   {% if 'jre' not in version -%}
-     {% set keys = links[version].keys() | list %}
-     {%- set values = links[version].values() | list %}
-     {%- set url_split = (values)[0][1].split('/') %}
-   * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
-   {%- endif %}
- {%- endfor %}
+{% for version in versions -%}
+  {% if 'jre' not in version -%}
+    {% set keys = links[version].keys() | list %}
+    {%- set values = links[version].values() | list %}
+    {%- set url_split = (values)[0][1].split('/') %}
+  * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
+  {%- endif %}
+{%- endfor %}
 
 Previous
 --------
 
-Earlier CentOS Docker image tags of Azul Zulu for previous update releases of OpenJDK are as follows:
+Earlier CentOS Docker image tags(the most recent 4 tags) of Azul Zulu for previous update releases of OpenJDK are as follows:
 
 {% for version in versions -%}
   {% set items = links[version].items() %}
-  * {% for item in items -%}
+  * {%- for item in items -%}
+    {%- if loop.index <= 4 -%}
     [{{ item[1][0] }}][{{ item[0] }}],
+    {%- endif %}
   {% endfor %}
-{%- endfor %}
+{%- endfor -%}
 
 License
 =======
@@ -65,6 +67,8 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
 
 {% for major_ver, body in links.items() %}
   {% for (num, ver) in body.items() -%}
-    [{{ num }}]: {{ ver[1] }}
+    {%- if loop.index <= 4 -%}
+      [{{ num }}]: {{ ver[1] }}
+    {%- endif %}
   {% endfor -%}
 {% endfor %}

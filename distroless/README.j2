@@ -33,14 +33,16 @@ Most Recent
 Previous
 --------
 
-Earlier Distroless Docker image tags of Azul Zulu for previous update releases of OpenJDK are as follows:
+Earlier Distroless Docker image tags(the most recent 4 tags) of Azul Zulu for previous update releases of OpenJDK are as follows:
 
 {% for version in versions -%}
   {% set items = links[version].items() %}
-  * {% for item in items -%}
+  * {%- for item in items -%}
+    {%- if loop.index <= 4 -%}
     [{{ item[1][0] }}][{{ item[0] }}],
+    {%- endif %}
   {% endfor %}
-{%- endfor %}
+{%- endfor -%}
 
 License
 =======
@@ -67,6 +69,8 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
 
 {% for major_ver, body in links.items() %}
   {% for (num, ver) in body.items() -%}
-    [{{ num }}]: {{ ver[1] }}
+    {%- if loop.index <= 4 -%}
+      [{{ num }}]: {{ ver[1] }}
+    {%- endif %}
   {% endfor -%}
 {% endfor %}
