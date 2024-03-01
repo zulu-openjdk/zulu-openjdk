@@ -28,23 +28,21 @@ Most Recent
 Previous
 --------
 
-Earlier Distroless Docker image tags of Azul Zulu for previous update releases of OpenJDK are as follows:
+Earlier Distroless Docker image tags(the most recent 4 tags) of Azul Zulu for previous update releases of OpenJDK are as follows:
 
 
-  * [21-latest][11],
+  *[21-latest][11],
   [21.0.2-21.32][12],
   
-  * [17-latest][13],
+  *[17-latest][13],
   [17.0.9-17.46][14],
   [17.0.10-17.48][15],
   [17.0.6-17.40.19][16],
-  [17.0.7-17.42.19][17],
-  [17.0.8-17.44.15][18],
-  [17.0.9-17.46.19][19],
-  [17.0.8.1-17.44.53][20],
   
-
-License
+  
+  
+  
+  License
 =======
 
 Azul Zulu incorporates third-party licensed software packages. Some of these have distribution restrictions, and some have only reporting requirements. Please see [docs.azul.com/core/tpl][9] for the links to the documents with licenses for third-party software included in the latest version of Azul Platform Core.
@@ -75,8 +73,8 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.9-17.46/Dockerfile
   [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.10-17.48/Dockerfile
   [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
-  [17]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.7-17.42.19/Dockerfile
-  [18]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8-17.44.15/Dockerfile
-  [19]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.9-17.46.19/Dockerfile
-  [20]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8.1-17.44.53/Dockerfile
+  
+  
+  
+  
   
