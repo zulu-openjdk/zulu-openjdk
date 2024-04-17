@@ -22,8 +22,8 @@ Most Recent
 -----------
 
  
-   * [`21.0.2-21.32`, `21-latest` (*21-latest/Dockerfile)*][11]
-   * [`17.0.8.1-17.44.53`, `17-latest` (*17-latest/Dockerfile)*][13]
+   * [`21.0.3-21.34`, `21-latest` (*21-latest/Dockerfile)*][11]
+   * [`17.0.8.1-17.44.53`, `17-latest` (*17-latest/Dockerfile)*][14]
 
 Previous
 --------
@@ -33,11 +33,13 @@ Earlier Distroless Docker image tags(the most recent 4 tags) of Azul Zulu for pr
 
   *[21-latest][11],
   [21.0.2-21.32][12],
+  [21.0.3-21.34][13],
   
-  *[17-latest][13],
-  [17.0.9-17.46][14],
-  [17.0.10-17.48][15],
-  [17.0.6-17.40.19][16],
+  *[17-latest][14],
+  [17.0.9-17.46][15],
+  [17.0.10-17.48][16],
+  [17.0.11-17.50][17],
+  
   
   
   
@@ -68,11 +70,13 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
 
   [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/21-latest/Dockerfile
   [12]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/21.0.2-21.32/Dockerfile
+  [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/21.0.3-21.34/Dockerfile
   
-  [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-latest/Dockerfile
-  [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.9-17.46/Dockerfile
-  [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.10-17.48/Dockerfile
-  [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
+  [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-latest/Dockerfile
+  [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.9-17.46/Dockerfile
+  [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.10-17.48/Dockerfile
+  [17]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.11-17.50/Dockerfile
+  
   
   
   
