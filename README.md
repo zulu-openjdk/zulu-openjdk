@@ -21,12 +21,15 @@ For Distroless image with Azul Zulu 17, run:
 
     docker run -it azul/zulu-openjdk-distroless:17-latest --version
 
+as the entrypoint used [ "/usr/lib/jvm/zulu17/bin/java" ]
+
 For Alpine image with Azul Zulu 17, run:
 
-    docker run -it azul/zulu-openjdk-alpine:17-latest --version
+    docker run -it azul/zulu-openjdk-alpine:17-latest java --version
 
+For Debian image with Azul Zulu 17, run:
 
-as the entrypoint used [ "/usr/lib/jvm/zulu17/bin/java" ]
+    docker run -it azul/zulu-openjdk-debian:17-latest java --version
 
 ## Project structure
 
