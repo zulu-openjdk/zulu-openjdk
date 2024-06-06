@@ -13,13 +13,13 @@ Usage
 
 To run a container of your choice, use the commands below as an example.
 
-For Azul Zulu 17, run:
+For Ubuntu image with Azul Zulu 17, run:
 
-    docker run -it --rm azul/zulu-openjdk-ubuntu:17 java -version
+    docker run -it --rm azul/zulu-openjdk:17-latest java -version
 
-For Distroless image, run:
+For Distroless image with Azul Zulu 17, run:
 
-    docker run -it azul/zulu-openjdk-distroless:17-distroless-latest --version
+    docker run -it azul/zulu-openjdk-distroless:17-latest --version
 
 as the entrypoint used [ "/usr/lib/jvm/zulu17/bin/java" ]
 
