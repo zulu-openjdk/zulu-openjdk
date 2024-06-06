@@ -23,6 +23,14 @@ For Distroless image with Azul Zulu 17, run:
 
 as the entrypoint used [ "/usr/lib/jvm/zulu17/bin/java" ]
 
+For Alpine image with Azul Zulu 17, run:
+
+    docker run -it azul/zulu-openjdk-alpine:17-latest java --version
+
+For Debian image with Azul Zulu 17, run:
+
+    docker run -it azul/zulu-openjdk-debian:17-latest java --version
+
 ## Project structure
 
 For each base operating system, a directory is created with the following content:
