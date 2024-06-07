@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 
 from jinja2 import Template
 
@@ -24,12 +25,21 @@ versions = sorted([ver.removesuffix('-latest') for ver in ver_path_dict.keys() i
                   key=lambda version: '{0:0>90}'.format(version).lower())
 versions.reverse()
 
-# Created a sorted list of versions
+# Create a list of tuples from ver_path_dict. Add a third element to each tuple ('digit_parts') to use for sorting
+ver_path_list = []
+for x in list(ver_path_dict.items()):
+    split_val = re.split(r'[.\-a-zA-Z]', x[0])
+    digit_parts = tuple([int(num) for num in split_val if num.isdigit()])
+    ver_path_list += [x + (digit_parts,)]
+
+# Sort ver_path_list first according to major verions, and then according to 'digit_parts'. Remove 'digit_parts' after sort
+# versions_list will be like [('22-latest', '<url>'), ..., ('22.0.0-22.28', '<url>'), ..., ('22.0.1-22.30', '<url>'), .., ('21-latest', '<url>'), ...]
 versions_list = []
 for ver in versions:
-    versions_list += sorted([x for x in ver_path_dict.items()
-                             if x[0][0] == ver or x[0][0:2] == ver],
-                            key=lambda version: '{0:0>90}'.format(version[0]).lower())
+    versions_list += [x[:2] for x in ver_path_list if x[0] == f"{ver}-latest"]
+    versions_list += [x[:2] for x in sorted(ver_path_list,
+                                            key=lambda version: version[2])
+                    if x[0] != f"{ver}-latest" and ( x[0][0] == ver or x[0][:2] == ver )]
 
 # Enumerate items in the list with versions to use it in template as pointers to links
 num_ver_dict = {}
