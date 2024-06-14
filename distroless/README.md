@@ -22,12 +22,8 @@ Most Recent
 -----------
 
 
-
-    
-      
-    * [`21.0.3-21.34`, `21-latest` (*21-latest/Dockerfile)*][11]
-    
-    * [`17.0.11-17.50`, `17-latest` (*17-latest/Dockerfile)*][14]
+  * [`21.0.3-21.34`, `21-latest` (*21-latest/Dockerfile)*][11]
+  * [`17.0.11-17.50`, `17-latest` (*17-latest/Dockerfile)*][14]
 
 Previous
 --------

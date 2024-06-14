@@ -21,27 +21,11 @@ Most Recent
 -----------
 
 
-
-    
-      
-    * [`22.0.1-22.30`, `22-latest` (*22-latest/Dockerfile)*][32]
-    
-    * [`21.0.3-21.34`, `21-latest` (*21-latest/Dockerfile)*][41]
-    
-    
-    
-    * [`17.0.11-17.50`, `17-latest` (*17-latest/Dockerfile)*][96]
-    
-    
-    
-    
-    
-    * [`11.0.23-11.72`, `11-latest` (*11-latest/Dockerfile)*][206]
-    
-    
-    * [`8u412-8.78`, `8-latest` (*8-latest/Dockerfile)*][268]
-    
-    
+  * [`22.0.1-22.30`, `22-latest` (*22-latest/Dockerfile)*][32]
+  * [`21.0.3-21.34`, `21-latest` (*21-latest/Dockerfile)*][41]
+  * [`17.0.11-17.50`, `17-latest` (*17-latest/Dockerfile)*][96]
+  * [`11.0.23-11.72`, `11-latest` (*11-latest/Dockerfile)*][206]
+  * [`8u412-8.78`, `8-latest` (*8-latest/Dockerfile)*][268]
 
 Previous
 --------
