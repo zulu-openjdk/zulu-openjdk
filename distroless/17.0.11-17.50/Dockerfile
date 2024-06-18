@@ -20,7 +20,7 @@ RUN apt-get -qq update && \
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu17
 
-RUN mkdir /emptydir
+RUN mkdir -p rootfs/tmp && chmod -R 777 rootfs/tmp
 
 FROM scratch
 
@@ -43,7 +43,7 @@ COPY --from=builder \
 
 COPY --from=builder /usr/lib/jvm/zulu17-ca-amd64 /usr/lib/jvm/zulu17
 
-COPY --from=builder /emptydir /tmp
+COPY --from=builder rootfs/ /
 
 ENV PATH="${PATH}:/usr/lib/jvm/zulu17/bin/"
 
