@@ -35,28 +35,28 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
 
 
   *[23-jre-headless-latest][11],
-  [23-jre-headless-latest][35],
-  [23.0.0-23.28-jre-headless][39],
+  [23-jre-headless-latest][36],
+  [23.0.0-23.28-jre-headless][38],
   
   *[22-jre-headless-latest][12],
-  [22-jre-headless-latest][42],
-  [22.0.0-22.28-jre-headless][43],
-  [22.0.1-22.30-jre-headless][47],
+  [22-jre-headless-latest][41],
+  [22.0.0-22.28-jre-headless][44],
+  [22.0.1-22.30-jre-headless][48],
   
   
   *[21-jre-headless-latest][13],
   [21-jre-headless-latest][54],
-  [21.0.0-21.28.85-jre-headless][55],
-  [21.0.1-21.30-jre-headless][59],
+  [21.0.0-21.28.85-jre-headless][56],
+  [21.0.1-21.30-jre-headless][58],
   
   
   
   
   
   *[20-jre-headless-latest][14],
-  [20-jre-headless-latest][75],
-  [20.0.0-20.28.85-jre-headless][78],
-  [20.0.1-20.30.11-jre-headless][80],
+  [20-jre-headless-latest][74],
+  [20.0.0-20.28.85-jre-headless][76],
+  [20.0.1-20.30.11-jre-headless][79],
   
   
   *[19-jre-headless-latest][15],
@@ -66,13 +66,13 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[18-jre-headless-latest][16],
-  [18-jre-headless-latest][99],
-  [18.0.1-18.30.11-jre-headless][100],
-  [18.0.2.1-18.32.13-jre-headless][104],
+  [18-jre-headless-latest][98],
+  [18.0.1-18.30.11-jre-headless][102],
+  [18.0.2.1-18.32.13-jre-headless][103],
   
   
   *[17-jre-headless-latest][17],
-  [17-jre-headless-latest][111],
+  [17-jre-headless-latest][110],
   [17.0.0-17.28.13-jre-headless][112],
   [17.0.1-17.30.15-jre-headless][117],
   
@@ -91,9 +91,9 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[15-jre-headless-latest][18],
-  [15-jre-headless-latest][170],
+  [15-jre-headless-latest][169],
   [15.0.7-15.40.19-jre-headless][181],
-  [15.0.8-15.42.15-jre-headless][185],
+  [15.0.8-15.42.15-jre-headless][184],
   
   
   
@@ -114,8 +114,8 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   *[11-jre-headless-latest][20],
   [11-jre-headless-latest][242],
-  [11.0.5-11.35-jre-headless][249],
-  [11.0.6-11.37-jre-headless][254],
+  [11.0.5-11.35-jre-headless][250],
+  [11.0.6-11.37-jre-headless][252],
   
   
   
@@ -139,9 +139,9 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[8-jre-headless-latest][21],
-  [8-jre-headless-latest][322],
+  [8-jre-headless-latest][321],
   [8u232-8.42.0.23-jre-headless][339],
-  [8u242-8.44.0.11-jre-headless][342],
+  [8u242-8.44.0.11-jre-headless][341],
   
   
   
@@ -165,11 +165,11 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[23-jre-latest][22],
-  [23-jre-latest][36],
-  [23.0.0-23.28-jre][37],
+  [23-jre-latest][35],
+  [23.0.0-23.28-jre][39],
   
   *[22-jre-latest][23],
-  [22-jre-latest][41],
+  [22-jre-latest][42],
   [22.0.0-22.28-jre][45],
   [22.0.1-22.30-jre][46],
   
@@ -177,14 +177,14 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   *[21-jre-latest][24],
   [21-jre-latest][53],
   [21.0.0-21.28.85-jre][57],
-  [21.0.1-21.30-jre][58],
+  [21.0.1-21.30-jre][59],
   
   
   
   
   
   *[20-jre-latest][25],
-  [20-jre-latest][74],
+  [20-jre-latest][75],
   [20.0.0-20.28.85-jre][77],
   [20.0.1-20.30.11-jre][81],
   
@@ -196,15 +196,15 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[18-jre-latest][27],
-  [18-jre-latest][98],
-  [18.0.1-18.30.11-jre][102],
-  [18.0.2.1-18.32.13-jre][103],
+  [18-jre-latest][99],
+  [18.0.1-18.30.11-jre][100],
+  [18.0.2.1-18.32.13-jre][105],
   
   
   *[17-jre-latest][28],
-  [17-jre-latest][110],
+  [17-jre-latest][111],
   [17.0.0-17.28.13-jre][114],
-  [17.0.1-17.30.15-jre][115],
+  [17.0.1-17.30.15-jre][116],
   
   
   
@@ -223,21 +223,21 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   *[16-jre-latest][29],
   [16-jre-latest][161],
   [16.0.0-16.28.11-jre][163],
-  [16.0.1-16.30.15-jre][164],
+  [16.0.1-16.30.15-jre][165],
   
   
   *[15-jre-latest][30],
-  [15-jre-latest][169],
+  [15-jre-latest][170],
   [15.0.0-15.27.17-jre][171],
-  [15.0.7-15.40.19-jre][180],
+  [15.0.7-15.40.19-jre][182],
   
   
   
   
   *[13-jre-latest][31],
   [13-jre-latest][196],
-  [13.0.3-13.31.11-jre][202],
-  [13.0.4-13.33.25-jre][204],
+  [13.0.3-13.31.11-jre][201],
+  [13.0.4-13.33.25-jre][203],
   
   
   
@@ -252,7 +252,7 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   *[11-jre-latest][32],
   [11-jre-latest][241],
   [11.0.3-11.31-jre][245],
-  [11.0.4-11.33-jre][248],
+  [11.0.4-11.33-jre][247],
   
   
   
@@ -279,7 +279,7 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[8-jre-latest][33],
-  [8-jre-latest][321],
+  [8-jre-latest][322],
   [8u212-8.38.0.13-jre][332],
   [8u222-8.40.0.25-jre][333],
   
@@ -309,15 +309,15 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[23-latest][34],
-  [23.0.0-23.28][38],
+  [23.0.0-23.28][37],
   
   *[22-latest][40],
-  [22.0.0-22.28][44],
-  [22.0.1-22.30][48],
+  [22.0.0-22.28][43],
+  [22.0.1-22.30][47],
   [22.0.2-22.32][49],
   
   *[21-latest][52],
-  [21.0.0-21.28.85][56],
+  [21.0.0-21.28.85][55],
   [21.0.1-21.30][60],
   [21.0.1-21.30.15][62],
   
@@ -325,24 +325,24 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   
   *[20-latest][73],
-  [20.0.0-20.28.85][76],
-  [20.0.1-20.30.11][79],
+  [20.0.0-20.28.85][78],
+  [20.0.1-20.30.11][80],
   [20.0.2-20.32.11][82],
   
   *[19-latest][85],
   [19.0.0-19.28.81][89],
   [19.0.1-19.30.11][93],
-  [19.0.2-19.32.13][95],
+  [19.0.2-19.32.13][94],
   
   *[18-latest][97],
   [18.0.1-18.30.11][101],
-  [18.0.2.1-18.32.13][105],
-  [18.0.2-18.32.11][108],
+  [18.0.2.1-18.32.13][104],
+  [18.0.2-18.32.11][107],
   
   *[17-latest][109],
   [17.0.0-17.28.13][113],
-  [17.0.1-17.30.15][116],
-  [17.0.2-17.32.13][118],
+  [17.0.1-17.30.15][115],
+  [17.0.2-17.32.13][119],
   
   
   
@@ -359,7 +359,7 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   
   *[16-latest][160],
   [16.0.0-16.28.11][162],
-  [16.0.1-16.30.15][165],
+  [16.0.1-16.30.15][164],
   [16.0.2-16.32.15][166],
   
   *[15-latest][168],
@@ -383,7 +383,7 @@ Earlier Alpine Docker image tags (the most recent 4 tags) of Azul Zulu for previ
   *[13-latest][195],
   [13.0.1-13.28][198],
   [13.0.2-13.29][199],
-  [13.0.3-13.31.11][201],
+  [13.0.3-13.31.11][202],
   
   
   
@@ -526,28 +526,28 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
 
 
   [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-jre-headless-latest/Dockerfile
-  [35]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-jre-headless-latest/Dockerfile
-  [39]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23.0.0-23.28-jre-headless/Dockerfile
+  [36]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-jre-headless-latest/Dockerfile
+  [38]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23.0.0-23.28-jre-headless/Dockerfile
   
   [12]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-jre-headless-latest/Dockerfile
-  [42]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-jre-headless-latest/Dockerfile
-  [43]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.0-22.28-jre-headless/Dockerfile
-  [47]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.1-22.30-jre-headless/Dockerfile
+  [41]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-jre-headless-latest/Dockerfile
+  [44]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.0-22.28-jre-headless/Dockerfile
+  [48]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.1-22.30-jre-headless/Dockerfile
   
   
   [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21-jre-headless-latest/Dockerfile
   [54]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21-jre-headless-latest/Dockerfile
-  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.0-21.28.85-jre-headless/Dockerfile
-  [59]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.1-21.30-jre-headless/Dockerfile
+  [56]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.0-21.28.85-jre-headless/Dockerfile
+  [58]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.1-21.30-jre-headless/Dockerfile
   
   
   
   
   
   [14]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-jre-headless-latest/Dockerfile
-  [75]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-jre-headless-latest/Dockerfile
-  [78]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.0-20.28.85-jre-headless/Dockerfile
-  [80]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.1-20.30.11-jre-headless/Dockerfile
+  [74]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-jre-headless-latest/Dockerfile
+  [76]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.0-20.28.85-jre-headless/Dockerfile
+  [79]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.1-20.30.11-jre-headless/Dockerfile
   
   
   [15]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/19-jre-headless-latest/Dockerfile
@@ -557,13 +557,13 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [16]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-jre-headless-latest/Dockerfile
-  [99]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-jre-headless-latest/Dockerfile
-  [100]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.1-18.30.11-jre-headless/Dockerfile
-  [104]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2.1-18.32.13-jre-headless/Dockerfile
+  [98]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-jre-headless-latest/Dockerfile
+  [102]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.1-18.30.11-jre-headless/Dockerfile
+  [103]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2.1-18.32.13-jre-headless/Dockerfile
   
   
   [17]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-jre-headless-latest/Dockerfile
-  [111]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-jre-headless-latest/Dockerfile
+  [110]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-jre-headless-latest/Dockerfile
   [112]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.0-17.28.13-jre-headless/Dockerfile
   [117]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.1-17.30.15-jre-headless/Dockerfile
   
@@ -582,9 +582,9 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [18]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-jre-headless-latest/Dockerfile
-  [170]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-jre-headless-latest/Dockerfile
+  [169]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-jre-headless-latest/Dockerfile
   [181]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15.0.7-15.40.19-jre-headless/Dockerfile
-  [185]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15.0.8-15.42.15-jre-headless/Dockerfile
+  [184]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15.0.8-15.42.15-jre-headless/Dockerfile
   
   
   
@@ -605,8 +605,8 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   [20]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11-jre-headless-latest/Dockerfile
   [242]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11-jre-headless-latest/Dockerfile
-  [249]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.5-11.35-jre-headless/Dockerfile
-  [254]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.6-11.37-jre-headless/Dockerfile
+  [250]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.5-11.35-jre-headless/Dockerfile
+  [252]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.6-11.37-jre-headless/Dockerfile
   
   
   
@@ -630,9 +630,9 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [21]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8-jre-headless-latest/Dockerfile
-  [322]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8-jre-headless-latest/Dockerfile
+  [321]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8-jre-headless-latest/Dockerfile
   [339]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u232-8.42.0.23-jre-headless/Dockerfile
-  [342]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u242-8.44.0.11-jre-headless/Dockerfile
+  [341]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u242-8.44.0.11-jre-headless/Dockerfile
   
   
   
@@ -656,11 +656,11 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-jre-latest/Dockerfile
-  [36]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-jre-latest/Dockerfile
-  [37]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23.0.0-23.28-jre/Dockerfile
+  [35]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-jre-latest/Dockerfile
+  [39]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23.0.0-23.28-jre/Dockerfile
   
   [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-jre-latest/Dockerfile
-  [41]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-jre-latest/Dockerfile
+  [42]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-jre-latest/Dockerfile
   [45]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.0-22.28-jre/Dockerfile
   [46]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.1-22.30-jre/Dockerfile
   
@@ -668,14 +668,14 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [24]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21-jre-latest/Dockerfile
   [53]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21-jre-latest/Dockerfile
   [57]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.0-21.28.85-jre/Dockerfile
-  [58]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.1-21.30-jre/Dockerfile
+  [59]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.1-21.30-jre/Dockerfile
   
   
   
   
   
   [25]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-jre-latest/Dockerfile
-  [74]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-jre-latest/Dockerfile
+  [75]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-jre-latest/Dockerfile
   [77]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.0-20.28.85-jre/Dockerfile
   [81]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.1-20.30.11-jre/Dockerfile
   
@@ -687,15 +687,15 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [27]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-jre-latest/Dockerfile
-  [98]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-jre-latest/Dockerfile
-  [102]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.1-18.30.11-jre/Dockerfile
-  [103]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2.1-18.32.13-jre/Dockerfile
+  [99]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-jre-latest/Dockerfile
+  [100]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.1-18.30.11-jre/Dockerfile
+  [105]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2.1-18.32.13-jre/Dockerfile
   
   
   [28]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-jre-latest/Dockerfile
-  [110]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-jre-latest/Dockerfile
+  [111]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-jre-latest/Dockerfile
   [114]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.0-17.28.13-jre/Dockerfile
-  [115]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.1-17.30.15-jre/Dockerfile
+  [116]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.1-17.30.15-jre/Dockerfile
   
   
   
@@ -714,21 +714,21 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [29]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16-jre-latest/Dockerfile
   [161]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16-jre-latest/Dockerfile
   [163]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.0-16.28.11-jre/Dockerfile
-  [164]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.1-16.30.15-jre/Dockerfile
+  [165]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.1-16.30.15-jre/Dockerfile
   
   
   [30]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-jre-latest/Dockerfile
-  [169]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-jre-latest/Dockerfile
+  [170]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-jre-latest/Dockerfile
   [171]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15.0.0-15.27.17-jre/Dockerfile
-  [180]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15.0.7-15.40.19-jre/Dockerfile
+  [182]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15.0.7-15.40.19-jre/Dockerfile
   
   
   
   
   [31]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13-jre-latest/Dockerfile
   [196]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13-jre-latest/Dockerfile
-  [202]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.3-13.31.11-jre/Dockerfile
-  [204]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.4-13.33.25-jre/Dockerfile
+  [201]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.3-13.31.11-jre/Dockerfile
+  [203]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.4-13.33.25-jre/Dockerfile
   
   
   
@@ -743,7 +743,7 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [32]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11-jre-latest/Dockerfile
   [241]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11-jre-latest/Dockerfile
   [245]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.3-11.31-jre/Dockerfile
-  [248]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.4-11.33-jre/Dockerfile
+  [247]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/11.0.4-11.33-jre/Dockerfile
   
   
   
@@ -770,7 +770,7 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [33]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8-jre-latest/Dockerfile
-  [321]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8-jre-latest/Dockerfile
+  [322]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8-jre-latest/Dockerfile
   [332]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u212-8.38.0.13-jre/Dockerfile
   [333]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/8u222-8.40.0.25-jre/Dockerfile
   
@@ -800,15 +800,15 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [34]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23-latest/Dockerfile
-  [38]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23.0.0-23.28/Dockerfile
+  [37]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/23.0.0-23.28/Dockerfile
   
   [40]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22-latest/Dockerfile
-  [44]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.0-22.28/Dockerfile
-  [48]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.1-22.30/Dockerfile
+  [43]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.0-22.28/Dockerfile
+  [47]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.1-22.30/Dockerfile
   [49]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/22.0.2-22.32/Dockerfile
   
   [52]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21-latest/Dockerfile
-  [56]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.0-21.28.85/Dockerfile
+  [55]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.0-21.28.85/Dockerfile
   [60]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.1-21.30/Dockerfile
   [62]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/21.0.1-21.30.15/Dockerfile
   
@@ -816,24 +816,24 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   [73]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20-latest/Dockerfile
-  [76]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.0-20.28.85/Dockerfile
-  [79]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.1-20.30.11/Dockerfile
+  [78]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.0-20.28.85/Dockerfile
+  [80]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.1-20.30.11/Dockerfile
   [82]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/20.0.2-20.32.11/Dockerfile
   
   [85]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/19-latest/Dockerfile
   [89]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/19.0.0-19.28.81/Dockerfile
   [93]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/19.0.1-19.30.11/Dockerfile
-  [95]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/19.0.2-19.32.13/Dockerfile
+  [94]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/19.0.2-19.32.13/Dockerfile
   
   [97]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18-latest/Dockerfile
   [101]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.1-18.30.11/Dockerfile
-  [105]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2.1-18.32.13/Dockerfile
-  [108]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2-18.32.11/Dockerfile
+  [104]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2.1-18.32.13/Dockerfile
+  [107]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/18.0.2-18.32.11/Dockerfile
   
   [109]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17-latest/Dockerfile
   [113]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.0-17.28.13/Dockerfile
-  [116]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.1-17.30.15/Dockerfile
-  [118]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.2-17.32.13/Dockerfile
+  [115]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.1-17.30.15/Dockerfile
+  [119]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/17.0.2-17.32.13/Dockerfile
   
   
   
@@ -850,7 +850,7 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   [160]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16-latest/Dockerfile
   [162]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.0-16.28.11/Dockerfile
-  [165]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.1-16.30.15/Dockerfile
+  [164]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.1-16.30.15/Dockerfile
   [166]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/16.0.2-16.32.15/Dockerfile
   
   [168]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/15-latest/Dockerfile
@@ -874,7 +874,7 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [195]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13-latest/Dockerfile
   [198]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.1-13.28/Dockerfile
   [199]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.2-13.29/Dockerfile
-  [201]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.3-13.31.11/Dockerfile
+  [202]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/alpine/13.0.3-13.31.11/Dockerfile
   
   
   
