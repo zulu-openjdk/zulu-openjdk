@@ -30,7 +30,7 @@ Most Recent
     {% if not ns.not_latest -%}
       {% set ns.not_latest = True %}
   * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
-    {%- elif (version[:1] == '8' or version[:2] in ['11', '17', '21']) or ( version[:2]|int > 21 and (version[:2]|int -21) % 4 == 0) and ns.not_latest %}
+    {%- elif (version[:1] == '8' or version[:2] in ['11', '17', '21', '22']) or ( version[:2]|int > 21 and (version[:2]|int -21) % 4 == 0) and ns.not_latest %}
   * [`{{ (values)[-1][0] }}`, `{{ (values)[0][0] }}` (*{{ url_split[-2] }}/{{ url_split[-1] }})*][{{ (keys)[0] }}]
     {%- endif %}
   {%- endif %}

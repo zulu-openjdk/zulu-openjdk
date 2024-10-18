@@ -17,7 +17,7 @@ RUN ZULU_PACK=${ZULU_DIR}.tar.gz && \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
     wget -q https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.28-r0/glibc-2.28-r0.apk && \
     apk add glibc-2.28-r0.apk && rm glibc-2.28-r0.apk && \
-    wget -q -O gcc-libs.tar.zst https://www.archlinux.org/packages/core/x86_64/gcc-libs/download/ && \
+    wget -q -O gcc-libs.tar.zst https://archive.archlinux.org/packages/g/gcc-libs/gcc-libs-13.2.1-5-x86_64.pkg.tar.zst && \
     wget -q -O zlib.tar.zst https://www.archlinux.org/packages/core/x86_64/zlib/download/ && \
     tar -I zstd -xf gcc-libs.tar.zst -C /tmp && \
     tar -I zstd -xf zlib.tar.zst -C /tmp && \
