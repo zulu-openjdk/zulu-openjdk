@@ -39,7 +39,7 @@ for ver in versions:
     versions_list += [x[:2] for x in ver_path_list if x[0] == f"{ver}-latest"]
     versions_list += [x[:2] for x in sorted(ver_path_list,
                                             key=lambda version: version[2])
-                    if x[0] != f"{ver}-latest" and ( x[0][0] == ver or x[0][:2] == ver )]
+                    if x[0] != f"{ver}-latest" and ( x[0][0] == ver or x[0][:2] == ver ) and x[:2] not in versions_list]
 
 # Enumerate items in the list with versions to use it in template as pointers to links
 num_ver_dict = {}
