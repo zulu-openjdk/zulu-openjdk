@@ -46,42 +46,42 @@ num_ver_dict = {}
 for num, ver in enumerate(versions_list, start=11):  # links start from [11]
     num_ver_dict[num] = ver
 
-# Split the dictionary by major versions
+# Extract major version number
+def get_major_version(version_str):
+    first_part = version_str.split('-')[0]
+    if 'u' in first_part:
+        return first_part.split('u')[0]
+    if first_part.isdigit():
+        return first_part
+    return first_part.split('.')[0]
+
+# Extract type (jre, jre-headless, jre-crac, jdk-crac)
+def get_base_type(version_str):
+    parts = version_str.split('-')
+    if 'crac' in parts:
+        runtime = next((part for part in parts if part in ['jdk', 'jre']), '')
+        return f"{runtime}-crac" if runtime else 'crac'
+    if 'headless' in parts:
+        return 'jre-headless'
+    if 'jre' in parts:
+        return 'jre'
+    if 'jdk' in parts:
+        return 'jdk'
+    return ''
+
+# Split the dictionary by major versions and type
 num_ver_dict_by_ver = {}
 for version in versions:
     numbered_versions = {}
+    target_major = get_major_version(version)
+    target_type = get_base_type(version)
     for (num, ver) in num_ver_dict.items():
-        if ver[0][0] == version.split('-')[0] \
-                and version.split('-')[-1] == 'jre' \
-                and (ver[0].split('-')[-1] == 'jre' or 'jre-latest' in ver[0]):
-            numbered_versions[num] = ver
-        elif ver[0][0:2] == version.split('-')[0] \
-                and version.split('-')[-1] == 'jre' \
-                and (ver[0].split('-')[-1] == 'jre' or 'jre-latest' in ver[0]):
-            numbered_versions[num] = ver
-        elif ver[0][0] == version.split('-')[0] \
-                and version.split('-')[-1] == 'headless' \
-                and (ver[0].split('-')[-1] == 'headless' or 'headless-latest' in ver[0]):
-            numbered_versions[num] = ver
-        elif ver[0][0:2] == version.split('-')[0] \
-                and version.split('-')[-1] == 'headless' \
-                and (ver[0].split('-')[-1] == 'headless' or 'headless-latest' in ver[0]):
-            numbered_versions[num] = ver
-        elif ver[0][0] == version.split('-')[0] \
-                and version.split('-')[-1] == 'crac' \
-                and (ver[0].split('-')[-1] == 'crac' or 'crac-latest' in ver[0]):
-            numbered_versions[num] = ver
-        elif ver[0][0:2] == version.split('-')[0] \
-                and version.split('-')[-1] == 'crac' \
-                and (ver[0].split('-')[-1] == 'crac' or 'crac-latest' in ver[0]):
-            numbered_versions[num] = ver
-        elif ver[0][0] == version.split('-')[0] \
-                and version.isnumeric() \
-                and 'jre' not in ver[0] and 'headless' not in ver[0]:
-            numbered_versions[num] = ver
-        elif ver[0][0:2] == version.split('-')[0] \
-                and version.isnumeric() \
-                and 'jre' not in ver[0] and 'headless' not in ver[0] and 'crac' not in ver[0]:
+        ver_major = get_major_version(ver[0])
+        ver_type = get_base_type(ver[0])
+        if version.isnumeric():
+            if ver_major == target_major and ver_type == '':
+                numbered_versions[num] = ver
+        elif ver_major == target_major and ver_type == target_type:
             numbered_versions[num] = ver
 
     num_ver_dict_by_ver[version] = numbered_versions
