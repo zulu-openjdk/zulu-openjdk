@@ -16,6 +16,7 @@ RUN apt-get -qq update && \
     echo "Package: zulu11-*\nPin: version 11.0.26-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu11-jdk=11.0.26-* && \
     apt-get -qq -y purge --auto-remove gnupg software-properties-common curl && \
+    apt-get -qq -y dist-upgrade && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu11

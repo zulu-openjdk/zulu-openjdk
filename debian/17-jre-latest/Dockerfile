@@ -16,6 +16,7 @@ RUN apt-get -qq update && \
     echo "Package: zulu17-*\nPin: version 17.0.14-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu17-jre=17.0.14-* && \
     apt-get -qq -y purge --auto-remove gnupg software-properties-common curl && \
+    apt-get -qq -y dist-upgrade && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu17
