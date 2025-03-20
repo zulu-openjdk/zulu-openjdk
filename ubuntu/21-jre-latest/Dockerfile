@@ -16,6 +16,7 @@ RUN apt-get -qq update && \
     echo "Package: zulu21-*\nPin: version 21.0.6-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu21-jre=21.0.6-* && \
     apt-get -qq -y purge --auto-remove gnupg software-properties-common curl && \
+    apt-get -qq -y dist-upgrade && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu21
