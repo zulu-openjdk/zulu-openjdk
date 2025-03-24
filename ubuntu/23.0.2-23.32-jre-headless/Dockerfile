@@ -16,6 +16,7 @@ RUN apt-get -qq update && \
     echo "Package: zulu23-*\nPin: version 23.0.2-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu23-jre-headless=23.0.2-* && \
     apt-get -qq -y purge --auto-remove gnupg software-properties-common curl && \
+    apt-get -qq -y dist-upgrade && \
     rm -rf /var/lib/apt/lists/* zulu-repo_${ZULU_REPO_VER}_all.deb
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu23
