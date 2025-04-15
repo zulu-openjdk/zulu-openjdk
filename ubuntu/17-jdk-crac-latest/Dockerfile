@@ -6,10 +6,12 @@ FROM ubuntu:22.04
 COPY --from=builder /opt/zulu17.56.15-ca-crac-jdk17.0.14-linux_aarch64 /opt/zulu17.56.15-ca-crac-jdk17.0.14-linux_aarch64
 ENV JAVA_HOME /opt/zulu17.56.15-ca-crac-jdk17.0.14-linux_aarch64
 ENV PATH $JAVA_HOME/bin:$PATH
-RUN apt-get -qq update && \
+RUN set -ex && \
+    apt-get -qq update && \
     apt-get -qq -y --no-install-recommends install locales tzdata && \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
     locale-gen en_US.UTF-8 && \
     apt-get -qq -y dist-upgrade && \
+    apt-get -qq -y autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
