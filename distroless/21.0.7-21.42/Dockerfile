@@ -11,7 +11,7 @@ RUN set -ex && \
     apt-get -qq update && \
     echo "Package: zulu21-*\nPin: version 21.0.7-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu21-jdk=21.0.7-* && \
-    apt-get -qq -y purge --auto-remove gnupg ca-certificates curl && \
+    apt-get -qq -y purge --auto-remove gnupg curl && \
     rm -rf /var/lib/apt/lists/*
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu21

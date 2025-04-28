@@ -11,7 +11,7 @@ RUN set -ex && \
     apt-get -qq update && \
     echo "Package: zulu24-*\nPin: version 24.0.1-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu24-jre=24.0.1-* && \
-    apt-get -qq -y purge --auto-remove gnupg ca-certificates curl && \
+    apt-get -qq -y purge --auto-remove gnupg curl && \
     apt-get -qq -y dist-upgrade && \
     apt-get -qq -y autoremove && \
     apt-get -qq clean && \

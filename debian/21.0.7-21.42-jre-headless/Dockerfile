@@ -11,7 +11,7 @@ RUN set -ex && \
     apt-get -qq update && \
     echo "Package: zulu21-*\nPin: version 21.0.7-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu21-jre-headless=21.0.7-* && \
-    apt-get -qq -y purge --auto-remove gnupg ca-certificates curl && \
+    apt-get -qq -y purge --auto-remove gnupg curl && \
     apt-get -qq -y dist-upgrade && \
     apt-get -qq -y autoremove && \
     apt-get -qq clean && \
