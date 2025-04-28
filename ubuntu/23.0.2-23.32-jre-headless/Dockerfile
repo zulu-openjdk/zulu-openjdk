@@ -11,7 +11,7 @@ RUN set -ex && \
     apt-get -qq update && \
     echo "Package: zulu23-*\nPin: version 23.0.2-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     apt-get -qq -y --no-install-recommends install zulu23-jre-headless=23.0.2-* && \
-    apt-get -qq -y purge --auto-remove gnupg ca-certificates curl && \
+    apt-get -qq -y purge --auto-remove gnupg curl && \
     apt-get -qq -y dist-upgrade && \
     apt-get -qq -y autoremove && \
     apt-get -qq clean && \
