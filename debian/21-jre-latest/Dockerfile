@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM debian:trixie-slim
 
 ENV LANG='en_US.UTF-8'
 RUN set -ex && \
