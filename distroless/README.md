@@ -15,6 +15,13 @@ Docker images of Azul Zulu are available in the following repositories, dependin
   * [Debian: azul/zulu-openjdk-debian][7]
   * [Distroless: azul/zulu-openjdk-distroless][8]
 
+Important Notice
+=====
+
+This container image repository will be retired by the end of 2026. Please start migrating to the [Docker Official repository with Azul containers][9]. Check the [Running Azul Zulu Community Availability (CA) in a Docker Container][10] in the Azul Documentation for more information.
+
+If you run into any issues or have feature/configuration requests, please open an issue at [AzulSystems/azul-zulu-images issues][11].
+
 Tags and `Dockerfile` links
 ===========================
 
@@ -22,8 +29,8 @@ Most Recent
 -----------
 
 
-  * [`21.0.10-21.48`, `21-latest` (*21-latest/Dockerfile)*][11]
-  * [`17.0.18-17.64`, `17-latest` (*17-latest/Dockerfile)*][21]
+  * [`21.0.12.1-21.52`, `21-latest` (*21-latest/Dockerfile)*][11]
+  * [`17.0.20.1-17.68`, `17-latest` (*17-latest/Dockerfile)*][22]
 
 Previous
 --------
@@ -42,10 +49,12 @@ Earlier Distroless Docker image tags(the most recent 4 tags) of Azul Zulu for pr
   
   
   
-  *[17-latest][21],
-  [17.0.6-17.40.19][22],
-  [17.0.7-17.42.19][23],
-  [17.0.8.1-17.44.53][24],
+  
+  *[17-latest][22],
+  [17.0.6-17.40.19][23],
+  [17.0.7-17.42.19][24],
+  [17.0.8.1-17.44.53][25],
+  
   
   
   
@@ -61,14 +70,13 @@ Earlier Distroless Docker image tags(the most recent 4 tags) of Azul Zulu for pr
   License
 =======
 
-Azul Zulu incorporates third-party licensed software packages. Some of these have distribution restrictions, and some have only reporting requirements. Please see [docs.azul.com/core/tpl][9] for the links to the documents with licenses for third-party software included in the latest version of Azul Platform Core.
+Azul Zulu incorporates third-party licensed software packages. Some of these have distribution restrictions, and some have only reporting requirements. Please see [docs.azul.com/core/tpl][12] for the links to the documents with licenses for third-party software included in the latest version of Azul Platform Core.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc., from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
 As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
 
-[BSD 3-Clause Clear License][10]
-
+[BSD 3-Clause Clear License][13]
 
   [1]: https://www.azul.com/
   [2]: https://www.azul.com/products/core/
@@ -78,8 +86,11 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   [6]: https://hub.docker.com/r/azul/zulu-openjdk-centos
   [7]: https://hub.docker.com/r/azul/zulu-openjdk-debian
   [8]: https://hub.docker.com/r/azul/zulu-openjdk-distroless
-  [9]: https://docs.azul.com/core/tpl
-  [10]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/LICENSE.txt
+  [9]: https://hub.docker.com/_/azul-zulu
+  [10]: https://docs.azul.com/core/install/linux-ca-docker
+  [11]: https://github.com/AzulSystems/azul-zulu-images/issues
+  [12]: https://docs.azul.com/core/tpl
+  [13]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/LICENSE.txt
 
 
   [11]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/21-latest/Dockerfile
@@ -93,10 +104,12 @@ As for any pre-built image usage, it is the image user's responsibility to ensur
   
   
   
-  [21]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-latest/Dockerfile
-  [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
-  [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.7-17.42.19/Dockerfile
-  [24]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8.1-17.44.53/Dockerfile
+  
+  [22]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17-latest/Dockerfile
+  [23]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.6-17.40.19/Dockerfile
+  [24]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.7-17.42.19/Dockerfile
+  [25]: https://github.com/zulu-openjdk/zulu-openjdk/blob/master/distroless/17.0.8.1-17.44.53/Dockerfile
+  
   
   
   
