@@ -1,12 +1,13 @@
 FROM ubuntu:22.04 as builder
 
-ADD https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-crac-jre21.0.10-linux_aarch64.tar.gz /opt/
-RUN cd /opt/ && tar -xzf zulu21.48.17-ca-crac-jre21.0.10-linux_aarch64.tar.gz && rm -rf zulu21.48.17-ca-crac-jre21.0.10-linux_aarch64.tar.gz
+ADD https://cdn.azul.com/zulu/bin/zulu21.52.203-ca-crac-jre21.0.12.1-linux_aarch64.tar.gz /opt/
+RUN cd /opt/ && tar -xzf zulu21.52.203-ca-crac-jre21.0.12.1-linux_aarch64.tar.gz && rm -rf zulu21.52.203-ca-crac-jre21.0.12.1-linux_aarch64.tar.gz
 FROM ubuntu:22.04
-COPY --from=builder /opt/zulu21.48.17-ca-crac-jre21.0.10-linux_aarch64 /opt/zulu21.48.17-ca-crac-jre21.0.10-linux_aarch64
-ENV JAVA_HOME /opt/zulu21.48.17-ca-crac-jre21.0.10-linux_aarch64
+COPY --from=builder /opt/zulu21.52.203-ca-crac-jre21.0.12.1-linux_aarch64 /opt/zulu21.52.203-ca-crac-jre21.0.12.1-linux_aarch64
+ENV JAVA_HOME /opt/zulu21.52.203-ca-crac-jre21.0.12.1-linux_aarch64
 ENV PATH $JAVA_HOME/bin:$PATH
-RUN set -ex && \
+RUN rm -f /etc/apt/apt.conf.d/docker-clean && \
+    set -ex && \
     apt-get -qq update && \
     apt-get -qq -y --no-install-recommends install locales tzdata && \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
