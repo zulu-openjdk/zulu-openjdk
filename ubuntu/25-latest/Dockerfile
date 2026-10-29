@@ -1,7 +1,8 @@
-FROM ubuntu:jammy
+FROM ubuntu:22.04
 
 ENV LANG='en_US.UTF-8'
-RUN set -ex && \
+RUN rm -f /etc/apt/apt.conf.d/docker-clean && \
+    set -ex && \
     apt-get -qq update && \
     apt-get -qq -y --no-install-recommends install gnupg ca-certificates locales curl tzdata && \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
@@ -9,8 +10,8 @@ RUN set -ex && \
     curl -s https://repos.azul.com/azul-repo.key | gpg --dearmor -o /usr/share/keyrings/azul.gpg && \
     echo "deb [signed-by=/usr/share/keyrings/azul.gpg] https://repos.azul.com/zulu/deb stable main" > /etc/apt/sources.list.d/zulu.list && \
     apt-get -qq update && \
-    echo "Package: zulu25-*\nPin: version 25.0.2-*\nPin-Priority: 1001" > /etc/apt/preferences && \
-    apt-get -qq -y --no-install-recommends install zulu25-jdk=25.0.2-* && \
+    echo "Package: zulu25-*\nPin: version 25.0.5-*\nPin-Priority: 1001" > /etc/apt/preferences && \
+    apt-get -qq -y --no-install-recommends install zulu25-jdk=25.0.5-* && \
     apt-get -qq -y purge --auto-remove gnupg curl && \
     apt-get -qq -y dist-upgrade && \
     apt-get -qq -y autoremove && \

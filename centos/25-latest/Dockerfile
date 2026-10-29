@@ -13,7 +13,7 @@ RUN set -ex && \
     sed -i 's/^mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* && \
     sed -i 's|# *baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-* && \
     yum -q -y install yum-plugin-versionlock tzdata fontconfig && \
-    yum versionlock zulu25-*-25.0.2-* && \
+    yum versionlock zulu25-*-25.0.5-* && \
     yum -q -y install zulu25-jdk && \
     yum clean all && \
     rm -rf /var/cache/yum zulu-repo_${ZULU_REPO_VER}.noarch.rpm
