@@ -1,7 +1,8 @@
-FROM debian:bookworm-slim
+FROM debian:12-slim
 
 ENV LANG='en_US.UTF-8'
-RUN set -ex && \
+RUN rm -f /etc/apt/apt.conf.d/docker-clean && \
+    set -ex && \
     apt-get -qq update && \
     apt-get -qq -y --no-install-recommends install gnupg ca-certificates locales curl tzdata && \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
